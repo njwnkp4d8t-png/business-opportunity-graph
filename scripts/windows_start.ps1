@@ -56,7 +56,7 @@ $REPO = Split-Path -Parent $MyInvocation.MyCommand.Path | Split-Path -Parent
 Set-Location $REPO
 
 $py = Get-PythonExe
-Write-Host "Using Python: $py" -ForegroundColor Green
+Write-Host "Using interpreter command: $py" -ForegroundColor Green
 
 if (Test-Path .venv) {
   $venvPy = ".\.venv\Scripts\python.exe"
@@ -72,6 +72,14 @@ if (-not (Test-Path .venv)) {
 }
 
 $venvPy = ".\.venv\Scripts\python.exe"
+Write-Host "Venv Python: $venvPy" -ForegroundColor Green
+$vi2 = Get-VenvInfo $venvPy
+if ($vi2) {
+  Write-Host ("Venv details -> version: {0} arch: {1}" -f $vi2.version, $vi2.machine) -ForegroundColor Green
+  if ($vi2.version -notin @('3.11','3.10') -or $vi2.machine -like '*arm*') {
+    throw "Venv was created with incompatible Python ($($vi2.version) on $($vi2.machine)). Install Python 3.11 (x64) and re-run with -Rebuild."
+  }
+}
 
 # Upgrade pip
 Run "$venvPy -m pip install -U pip"
