@@ -1,0 +1,13 @@
+raw_category,canonical_category,confidence,notes
+Restaurant,restaurant,0.95,High-level
+Coffee shop,coffee_shop,0.95,Core category
+Cafe,coffee_shop,0.7,Ambiguous cafe vs bakery
+Bar,bar,0.95,
+Mexican restaurant,restaurant_mexican,0.95,
+Auto repair shop,auto_repair,0.95,
+Beauty salon,beauty_salon,0.9,
+Hair salon,beauty_salon,0.8,
+Nail salon,beauty_salon,0.8,
+Tourist attraction,poi_attraction,0.7,
+Park,park,0.95,
+

@@ -1,0 +1,7 @@
+alias,canonical_id,notes
+ALLIED GARDENS,60,Case normalization; map to 'Allied Gardens' id
+ADAMS NORTH,999,Placeholder until added to community.json
+LA MESA UNINCORPORATED,999,Use county unincorporated mapping
+SKYLINE,999,Requires SME disambiguation
+AZALEA/HOLLYWOOD PARK,999,Slash variants; create canonical
+
