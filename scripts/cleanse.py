@@ -37,6 +37,7 @@ REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
 DATA_DIR = REPO_ROOT / "data"
 EXPORT_DIR = REPO_ROOT / "exports"
 LOOKUPS_DIR = REPO_ROOT / "lookups"
+TEACHER_LIKELIHOOD = REPO_ROOT / "franchise_likelihood_filtered.csv"
 
 
 def load_json(name: str) -> pd.DataFrame:
@@ -147,9 +148,54 @@ def map_categories(raw: Any, cmap: Dict[str, Tuple[str, float]]) -> list[str]:
     return res
 
 
+def load_franchise_likelihood() -> Dict[str, float]:
+    """Load teacher-provided category -> franchise likelihood mapping if present.
+
+    Returns a dict keyed by lowercased category string.
+    """
+    m: Dict[str, float] = {}
+    try:
+        if TEACHER_LIKELIHOOD.exists():
+            df = pd.read_csv(TEACHER_LIKELIHOOD)
+            if {"category", "likelihood"}.issubset(df.columns):
+                for _, r in df.iterrows():
+                    cat = str(r["category"]).strip().lower()
+                    try:
+                        val = float(r["likelihood"]) if pd.notna(r["likelihood"]) else None
+                    except Exception:
+                        val = None
+                    if cat and val is not None:
+                        m[cat] = val
+                # also export a normalized copy into exports for reference
+                df_out = pd.DataFrame([
+                    {"category": k, "likelihood": v} for k, v in sorted(m.items())
+                ])
+                EXPORT_DIR.mkdir(exist_ok=True)
+                df_out.to_csv(EXPORT_DIR / "franchise_likelihood.csv", index=False)
+    except Exception:
+        # best-effort; ignore if file missing or unreadable
+        pass
+    return m
+
+
+def score_categories_likelihood(cats: list[str], like_map: Dict[str, float]) -> float | None:
+    """Given canonical categories and a mapping, return max likelihood (or None)."""
+    vals = []
+    for c in cats or []:
+        key = str(c).strip().lower()
+        if key in like_map:
+            vals.append(like_map[key])
+    if not vals:
+        return None
+    try:
+        return float(max(vals))
+    except Exception:
+        return None
+
 def export_locations() -> pd.DataFrame:
     loc = load_json("business_location.json")
     cat_map = load_category_map()
+    like_map = load_franchise_likelihood()
 
     # Fix blockgroup data types
     if "blockgroup" in loc.columns:
@@ -181,9 +227,13 @@ def export_locations() -> pd.DataFrame:
         "latitude", "longitude", "blockgroup", "city", "zip"
     ]].copy()
     # Map categories to canonical
-    out["categories"] = loc["categories"].apply(lambda xs: "|".join(map_categories(xs, cat_map)))
+    canon_cats_series = loc["categories"].apply(lambda xs: map_categories(xs, cat_map))
+    out["categories"] = canon_cats_series.apply(lambda xs: "|".join(xs))
     # Keep raw categories for reference
     out["raw_categories"] = loc["categories"].apply(join_cats)
+    # Optional franchise likelihood per location (max of mapped categories)
+    if like_map:
+        out["franchise_likelihood"] = canon_cats_series.apply(lambda xs: score_categories_likelihood(xs, like_map))
 
     # loc_bg edges with geoid when determinable from ctblockgroup
     loc_bg = out.loc[out["blockgroup"].notna(), ["id", "blockgroup"]].copy()
@@ -213,6 +263,7 @@ def export_locations() -> pd.DataFrame:
 def export_businesses() -> pd.DataFrame:
     biz = load_json("business.json")
     cat_map = load_category_map()
+    like_map = load_franchise_likelihood()
 
     def join_cats(x: Any) -> str:
         if isinstance(x, list):
@@ -220,8 +271,11 @@ def export_businesses() -> pd.DataFrame:
         return ""
 
     out = biz[["name", "num_locations"]].copy()
-    out["categories"] = biz["categories"].apply(lambda xs: "|".join(map_categories(xs, cat_map)))
+    canon_cats_series = biz["categories"].apply(lambda xs: map_categories(xs, cat_map))
+    out["categories"] = canon_cats_series.apply(lambda xs: "|".join(xs))
     out["raw_categories"] = biz["categories"].apply(join_cats)
+    if like_map:
+        out["franchise_likelihood"] = canon_cats_series.apply(lambda xs: score_categories_likelihood(xs, like_map))
     out.to_csv(EXPORT_DIR / "businesses.csv", index=False)
     return out
 
