@@ -31,14 +31,17 @@ function Get-PythonExe {
 
 function Get-VenvInfo($venvPy) {
   if (-not (Test-Path $venvPy)) { return $null }
-  $info = & $venvPy - << 'PY'
+  $pyCode = @'
 import platform, sys, json
 print(json.dumps({
   "version": f"{sys.version_info.major}.{sys.version_info.minor}",
   "machine": platform.machine().lower(),
 }))
-PY
-  try { return ($info | ConvertFrom-Json) } catch { return $null }
+'@
+  try {
+    $info = & $venvPy -c $pyCode
+    return ($info | ConvertFrom-Json)
+  } catch { return $null }
 }
 
 function Run($cmd) {
