@@ -14,7 +14,8 @@ param(
   [string]$JavaHome = "",
   [switch]$ReinstallJavaExtension,
   [int]$Port = 8501,
-  [switch]$Full
+  [switch]$Full,
+  [switch]$Rebuild
 )
 
 $ErrorActionPreference = 'Stop'
@@ -43,7 +44,7 @@ if ($FixJava) {
 $start = Join-Path $REPO 'scripts\windows_start.ps1'
 $startArgs = @('-Port', $Port)
 if ($Full) { $startArgs += '-Full' }
+if ($Rebuild) { $startArgs += '-Rebuild' }
 RunPS1 $start ($startArgs -join ' ')
 
 Write-Host "`nAll done. Open http://localhost:$Port if the browser doesn’t pop up automatically." -ForegroundColor Green
-

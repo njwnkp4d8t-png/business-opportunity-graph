@@ -12,7 +12,8 @@
 #
 param(
   [int]$Port = 8501,
-  [switch]$Full
+  [switch]$Full,
+  [switch]$Rebuild
 )
 
 $ErrorActionPreference = 'Stop'
@@ -60,7 +61,7 @@ Write-Host "Using Python: $py" -ForegroundColor Green
 if (Test-Path .venv) {
   $venvPy = ".\.venv\Scripts\python.exe"
   $vi = Get-VenvInfo $venvPy
-  if ($vi -and ($vi.version -notin @('3.11','3.10') -or $vi.machine -like '*arm*')) {
+  if ($Rebuild -or ($vi -and ($vi.version -notin @('3.11','3.10') -or $vi.machine -like '*arm*'))) {
     Write-Host "Existing .venv uses Python $($vi.version) on $($vi.machine). Recreating with a compatible 3.11/3.10 x64..." -ForegroundColor Yellow
     Remove-Item -Recurse -Force .venv
   }
@@ -80,7 +81,8 @@ if ($Full) {
   Run "$venvPy -m pip install -r requirements.txt"
 } else {
   Write-Host "Installing minimal UI deps (fast path)..." -ForegroundColor Yellow
-  Run "$venvPy -m pip install pandas numpy streamlit pydeck"
+  # Pin streamlit to a version with wide cp311/cp310 wheels
+  Run "$venvPy -m pip install pandas numpy streamlit==1.51.0 pydeck"
 }
 
 # Generate exports
