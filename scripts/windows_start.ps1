@@ -18,15 +18,15 @@ param(
 $ErrorActionPreference = 'Stop'
 
 function Get-PythonExe {
-  # Prefer x64 CPython with versions that have wide wheel support
-  $candidates = @('py -3.11-64','py -3.10-64','py -3.11','py -3.10','python')
+  # Strictly require x64 CPython 3.11/3.10 to ensure prebuilt wheels (avoids pyarrow build)
+  $candidates = @('py -3.11-64','py -3.10-64')
   foreach ($c in $candidates) {
     try {
       $ver = cmd /c "$c --version" 2>&1
       if ($LASTEXITCODE -eq 0 -and $ver) { return $c }
     } catch {}
   }
-  throw 'No suitable Python found. Please install Python 3.11 (x64) from https://www.python.org/downloads/windows/ and try again.'
+  throw 'No suitable x64 Python found. Install Python 3.11 (x64) and ensure the "py" launcher is available. Download: https://www.python.org/downloads/release/python-3110/ Then rerun this script.'
 }
 
 function Get-VenvInfo($venvPy) {
