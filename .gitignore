@@ -1,1 +1,10 @@
 .env
+
+# Local artifacts
+__pycache__/
+*.pyc
+.DS_Store
+exports/*.csv
+exports/*.json
+exports/*.parquet
+notebooks/.ipynb_checkpoints/
