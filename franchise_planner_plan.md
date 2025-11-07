@@ -1,4 +1,4 @@
-# Franchise Planner – Parallel Execution Plan (Team of 4)
+# Franchise Planner
 
 This plan expands the initial detailed.md into a robust, parallelizable blueprint for building the Franchise Planner with PostGIS/ArcGIS + Neo4j and LLM assist. It breaks down what we have, why each step matters, how to implement it, and provides scripts/snippets you can adapt.
 
