@@ -12,22 +12,27 @@ CREATE CONSTRAINT business_name IF NOT EXISTS FOR (n:Business) REQUIRE n.name IS
 CREATE CONSTRAINT location_id IF NOT EXISTS FOR (n:BusinessLocation) REQUIRE n.id IS UNIQUE;
 CREATE INDEX location_point IF NOT EXISTS FOR (n:BusinessLocation) ON (n.geom);
 
-// Load places
+// Load places (merge by unique property to avoid conflicts)
 USING PERIODIC COMMIT 1000
 LOAD CSV WITH HEADERS FROM 'file:///states.csv' AS row
-MERGE (:State {id: toInteger(row.id), code: row.code, name: row.name});
+MERGE (s:State {code: row.code})
+SET s.id = CASE WHEN row.id = '' THEN NULL ELSE toInteger(row.id) END,
+    s.name = row.name;
 
 USING PERIODIC COMMIT 1000
 LOAD CSV WITH HEADERS FROM 'file:///counties.csv' AS row
-MERGE (:County {id: toInteger(row.id), name: row.name});
+MERGE (c:County {name: row.name})
+SET c.id = CASE WHEN row.id = '' THEN NULL ELSE toInteger(row.id) END;
 
 USING PERIODIC COMMIT 1000
 LOAD CSV WITH HEADERS FROM 'file:///cities.csv' AS row
-MERGE (:City {id: toInteger(row.id), name: row.name});
+MERGE (c:City {name: row.name})
+SET c.id = CASE WHEN row.id = '' THEN NULL ELSE toInteger(row.id) END;
 
 USING PERIODIC COMMIT 1000
 LOAD CSV WITH HEADERS FROM 'file:///communities.csv' AS row
-MERGE (:Community {id: toInteger(row.id), name: row.name});
+MERGE (c:Community {name: row.name})
+SET c.id = CASE WHEN row.id = '' THEN NULL ELSE toInteger(row.id) END;
 
 USING PERIODIC COMMIT 1000
 LOAD CSV WITH HEADERS FROM 'file:///zipcodes.csv' AS row

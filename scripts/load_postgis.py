@@ -39,10 +39,7 @@ def connect():
 def load_block_groups(cur, limit: int = 0):
     df = pd.read_json(DATA_DIR / "block_group.json")
 
-    # Prefer San Diego county if duplicates exist
-    if "countyfp" in df.columns:
-        df = df.sort_values(by=["ctblockgroup", "countyfp"], ascending=[True, False])
-        df = df.drop_duplicates(subset=["ctblockgroup"], keep="first")
+    # Keep both San Diego (73) and Imperial (25) rows; GEOID is the unique key
 
     cols = [
         "ctblockgroup", "countyfp", "tractce", "blkgrpce",
@@ -78,6 +75,7 @@ def load_block_groups(cur, limit: int = 0):
             geoid = f"{s:02d}{c:03d}{t:06d}{b:1d}"
         except Exception:
             geoid = None
+        # Upsert row using GEOID as the key
         cur.execute(
             sql,
             (

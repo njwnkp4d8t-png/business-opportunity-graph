@@ -15,6 +15,8 @@ CREATE TABLE IF NOT EXISTS block_groups (
   n01_bus float8,
   s23_emp float8,
   n37_sales float8,
+  di100_cy float8,
+  di150_cy float8,
   geom geometry(MultiPolygon, 4326)
 );
 
