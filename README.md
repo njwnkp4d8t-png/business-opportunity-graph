@@ -3,7 +3,7 @@ UCSD DSE 203 Project
 
 The idea is simple: help a planner answer “Where should we open next?” with data, not vibes. We blend points (business locations) and polygons (block groups, cities, etc.) into a graph, add a few smart features, and rank promising regions. A dash of explanation makes it shareable.
 
-## 🎯 Goal (short version)
+## 🎯 Goal
 Pick the best areas to open a new location for a given brand in San Diego + Imperial counties, with explainable reasons.
 
 ## 🧠 Approach (high‑level)
