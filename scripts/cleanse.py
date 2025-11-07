@@ -261,7 +261,7 @@ def export_places() -> None:
 
 
 def normalize_communities_and_export_relationships() -> None:
-    # Load lookups
+    # Load lookups (communities only)
     aliases: Dict[str, Any] = {}
     if (LOOKUPS_DIR / "communities_aliases.csv").exists():
         df_alias = pd.read_csv(LOOKUPS_DIR / "communities_aliases.csv")
@@ -270,12 +270,17 @@ def normalize_communities_and_export_relationships() -> None:
             cid = r.get("canonical_id")
             if alias:
                 aliases[alias] = cid
-    # Build name->id map from community.json
+    # Build name->id maps
     comm = load_json("community.json") if (DATA_DIR / "community.json").exists() else pd.DataFrame()
-    name_to_id = {}
+    city_df = load_json("city.json") if (DATA_DIR / "city.json").exists() else pd.DataFrame()
+    community_name_to_id: Dict[str, Any] = {}
+    city_name_to_id: Dict[str, Any] = {}
     if not comm.empty:
         for _, r in comm.iterrows():
-            name_to_id[str(r["name"]).strip().upper()] = r["id"]
+            community_name_to_id[str(r["name"]).strip().upper()] = r["id"]
+    if not city_df.empty:
+        for _, r in city_df.iterrows():
+            city_name_to_id[str(r["name"]).strip().upper()] = r["id"]
 
     # Blockgroup mapping ctblockgroup -> geoid when unambiguous
     try:
@@ -314,7 +319,7 @@ def normalize_communities_and_export_relationships() -> None:
             cid = aliases.get(key)
             if cid is not None and str(cid).strip() != "":
                 return str(cid), "community_id"
-            cid = name_to_id.get(key)
+            cid = community_name_to_id.get(key)
             if cid is not None:
                 return str(cid), "community_id"
             return None, "community_unknown"
@@ -323,11 +328,8 @@ def normalize_communities_and_export_relationships() -> None:
             if isinstance(val, (int, float)) and not pd.isna(val):
                 return str(int(val)), "city_id"
             key = str(val).strip().upper()
-            # Try exact name match
-            for nm, cid in name_to_id.items():
-                if nm == key:
-                    return str(cid), "city_id"
-            return None, "city_unknown"
+            cid = city_name_to_id.get(key)
+            return (str(cid) if cid is not None else None), ("city_id" if cid is not None else "city_unknown")
         if t in {"blockgroup", "block group", "block_group"}:
             try:
                 ct = int(val)
