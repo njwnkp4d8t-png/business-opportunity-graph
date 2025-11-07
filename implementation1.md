@@ -21,13 +21,13 @@ How to run
 - With Neo4j load:
   - Add `--neo4j true --neo4j-user neo4j --neo4j-password <pwd>` (uses `NEO4J_URI` or defaults to `bolt://localhost:7687`).
 
-Why this script exists
+- Why this script exists
 - Convenience: fewer commands to remember during iteration.
 - Repeatability: consistent sequence across machines and team members.
 - Flexibility: you can choose a lightweight or full spatial route without changing file paths.
 
-Notes
+- Notes
+  - Category and community normalization is applied during export using the lookup CSVs in `lookups/`. This trims noisy categories and resolves community names to real IDs.
 - The PostGIS path uses GEOID as the unique Block Group key, covering both San Diego and Imperial counties without collisions.
 - ESRI enrichment is optional; it only runs if those tables have been imported into Postgres and `--include-esri` is set.
 - If `psql` or `cypher-shell` are not installed, the script will skip those steps and print a message.
-

@@ -23,7 +23,7 @@ from __future__ import annotations
 import argparse
 import json
 import pathlib
-from typing import Any, Iterable
+from typing import Any, Iterable, Dict, Tuple
 
 import pandas as pd
 
@@ -36,6 +36,7 @@ except Exception:
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
 DATA_DIR = REPO_ROOT / "data"
 EXPORT_DIR = REPO_ROOT / "exports"
+LOOKUPS_DIR = REPO_ROOT / "lookups"
 
 
 def load_json(name: str) -> pd.DataFrame:
@@ -116,8 +117,39 @@ def export_blockgroups() -> pd.DataFrame:
     return out
 
 
+def load_category_map() -> Dict[str, Tuple[str, float]]:
+    path = LOOKUPS_DIR / "category_map.csv"
+    if not path.exists():
+        return {}
+    df = pd.read_csv(path)
+    out: Dict[str, Tuple[str, float]] = {}
+    for _, r in df.iterrows():
+        raw = str(r.get("raw_category", "")).strip().lower()
+        canon = str(r.get("canonical_category", "")).strip()
+        conf = float(r.get("confidence", 1.0)) if pd.notna(r.get("confidence")) else 1.0
+        if raw:
+            out[raw] = (canon, conf)
+    return out
+
+
+def map_categories(raw: Any, cmap: Dict[str, Tuple[str, float]]) -> list[str]:
+    if not isinstance(raw, list):
+        return []
+    res: list[str] = []
+    seen = set()
+    for cat in raw:
+        key = str(cat).strip().lower()
+        canon = cmap.get(key, (cat, 1.0))[0]
+        canon_s = str(canon)
+        if canon_s not in seen and canon_s:
+            res.append(canon_s)
+            seen.add(canon_s)
+    return res
+
+
 def export_locations() -> pd.DataFrame:
     loc = load_json("business_location.json")
+    cat_map = load_category_map()
 
     # Fix blockgroup data types
     if "blockgroup" in loc.columns:
@@ -148,7 +180,10 @@ def export_locations() -> pd.DataFrame:
         "id", "name", "avg_rating", "franchise", "confidence",
         "latitude", "longitude", "blockgroup", "city", "zip"
     ]].copy()
-    out["categories"] = loc["categories"].apply(join_cats)
+    # Map categories to canonical
+    out["categories"] = loc["categories"].apply(lambda xs: "|".join(map_categories(xs, cat_map)))
+    # Keep raw categories for reference
+    out["raw_categories"] = loc["categories"].apply(join_cats)
 
     # loc_bg edges with geoid when determinable from ctblockgroup
     loc_bg = out.loc[out["blockgroup"].notna(), ["id", "blockgroup"]].copy()
@@ -177,6 +212,7 @@ def export_locations() -> pd.DataFrame:
 
 def export_businesses() -> pd.DataFrame:
     biz = load_json("business.json")
+    cat_map = load_category_map()
 
     def join_cats(x: Any) -> str:
         if isinstance(x, list):
@@ -184,7 +220,8 @@ def export_businesses() -> pd.DataFrame:
         return ""
 
     out = biz[["name", "num_locations"]].copy()
-    out["categories"] = biz["categories"].apply(join_cats)
+    out["categories"] = biz["categories"].apply(lambda xs: "|".join(map_categories(xs, cat_map)))
+    out["raw_categories"] = biz["categories"].apply(join_cats)
     out.to_csv(EXPORT_DIR / "businesses.csv", index=False)
     return out
 
@@ -223,6 +260,118 @@ def export_places() -> None:
         pass
 
 
+def normalize_communities_and_export_relationships() -> None:
+    # Load lookups
+    aliases: Dict[str, Any] = {}
+    if (LOOKUPS_DIR / "communities_aliases.csv").exists():
+        df_alias = pd.read_csv(LOOKUPS_DIR / "communities_aliases.csv")
+        for _, r in df_alias.iterrows():
+            alias = str(r.get("alias", "")).strip().upper()
+            cid = r.get("canonical_id")
+            if alias:
+                aliases[alias] = cid
+    # Build name->id map from community.json
+    comm = load_json("community.json") if (DATA_DIR / "community.json").exists() else pd.DataFrame()
+    name_to_id = {}
+    if not comm.empty:
+        for _, r in comm.iterrows():
+            name_to_id[str(r["name"]).strip().upper()] = r["id"]
+
+    # Blockgroup mapping ctblockgroup -> geoid when unambiguous
+    try:
+        bg = load_json("block_group.json")
+        bg["geoid"] = bg.apply(make_geoid, axis=1)
+        ct_to_geoid = (
+            bg.groupby("ctblockgroup")["geoid"]
+            .agg(lambda s: s.iloc[0] if s.nunique() == 1 else None)
+            .to_dict()
+        )
+    except Exception:
+        ct_to_geoid = {}
+
+    # Read relationships and normalize any community names
+    rel_paths = [DATA_DIR / "relationships.json", DATA_DIR / "relationship.json"]
+    frames = []
+    for p in rel_paths:
+        if p.exists():
+            try:
+                frames.append(pd.read_json(p))
+            except Exception:
+                pass
+    if not frames:
+        return
+    rel = pd.concat(frames, ignore_index=True)
+
+    def resolve_entity(val: Any, etype: str) -> Tuple[str | None, str]:
+        t = (etype or "").strip().lower()
+        # normalize
+        if t in {"community", "community ", "communities"}:
+            if pd.isna(val):
+                return None, t
+            if isinstance(val, (int, float)) and not pd.isna(val):
+                return str(int(val)), "community_id"
+            key = str(val).strip().upper()
+            cid = aliases.get(key)
+            if cid is not None and str(cid).strip() != "":
+                return str(cid), "community_id"
+            cid = name_to_id.get(key)
+            if cid is not None:
+                return str(cid), "community_id"
+            return None, "community_unknown"
+        if t in {"city", "city ", "cities"}:
+            # map by name
+            if isinstance(val, (int, float)) and not pd.isna(val):
+                return str(int(val)), "city_id"
+            key = str(val).strip().upper()
+            # Try exact name match
+            for nm, cid in name_to_id.items():
+                if nm == key:
+                    return str(cid), "city_id"
+            return None, "city_unknown"
+        if t in {"blockgroup", "block group", "block_group"}:
+            try:
+                ct = int(val)
+            except Exception:
+                return None, "blockgroup_unknown"
+            geoid = ct_to_geoid.get(ct)
+            return (geoid if geoid else str(ct)), ("geoid" if geoid else "ctblockgroup")
+        if t in {"zipcode", "zip", "zip code"}:
+            return (str(val) if not pd.isna(val) else None), "zip"
+        if t in {"county"}:
+            # We don't create ids for counties from names here
+            return (str(val) if not pd.isna(val) else None), "county"
+        if t in {"business", "business location", "business_location"}:
+            try:
+                return str(int(val)), "business_id"
+            except Exception:
+                return None, "business_unknown"
+        return (str(val) if not pd.isna(val) else None), t
+
+    rows = []
+    for _, r in rel.iterrows():
+        e1 = r.get("entity1")
+        t1 = r.get("entitytype1")
+        pred = r.get("predicate")
+        e2 = r.get("entity2")
+        t2 = r.get("entitytype2")
+        res1, k1 = resolve_entity(e1, str(t1))
+        res2, k2 = resolve_entity(e2, str(t2))
+        rows.append({
+            "entity1": e1,
+            "entitytype1": t1,
+            "predicate": pred,
+            "entity2": e2,
+            "entitytype2": t2,
+            "entity1_resolved": res1,
+            "entity1_kind": k1,
+            "entity2_resolved": res2,
+            "entity2_kind": k2,
+        })
+
+    df_out = pd.DataFrame(rows)
+    df_out.to_csv(EXPORT_DIR / "relationships_mapped.csv", index=False)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Cleanse data and export CSVs for Neo4j/PostGIS")
     parser.add_argument("--verbose", action="store_true")
@@ -234,6 +383,7 @@ def main() -> None:
     loc = export_locations()
     biz = export_businesses()
     export_places()
+    normalize_communities_and_export_relationships()
 
     if args.verbose:
         print("Exported rows:")
@@ -241,6 +391,7 @@ def main() -> None:
         print("  locations:", len(loc))
         print("  businesses:", len(biz))
         print("  loc_bg edges:", (EXPORT_DIR / "loc_bg.csv").exists())
+        print("  relationships_mapped:", (EXPORT_DIR / "relationships_mapped.csv").exists())
 
 
 if __name__ == "__main__":
