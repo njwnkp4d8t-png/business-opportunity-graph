@@ -1,6 +1,5 @@
 # What I Implemented (Franchise Planner Kickoff)
 
-Frank
 Date: 2025-11-07
 
 ## Why these changes
@@ -26,6 +25,7 @@ Date: 2025-11-07
 - Lookups (seed files)
   - `lookups/communities_aliases.csv` – Start of a mapping for community names that show up as free text.
   - `lookups/category_map.csv` – Seed category normalization map (raw → canonical).
+  - `franchise_likelihood_filtered.csv` (teacher-provided) – If present, exports add a `franchise_likelihood` feature per business/location (max across mapped categories). A normalized copy is emitted to `exports/franchise_likelihood.csv`.
 
 ## What’s different from the original repo
 - Dual‑county scope: we include both San Diego (73) and Imperial (25).
@@ -33,6 +33,7 @@ Date: 2025-11-07
 - Spatial assignment: we formalized the PIP + nearest fallback in PostGIS to fix missing blockgroup links and avoid long/lat outliers.
 - Admin coverage: added admin tables + backfill from real data so City/Zip nodes exist for edges even if the JSON admin list is incomplete.
 - ESRI integration: added a concrete enrichment step (`postgis_esri_enrichment.sql`) that mirrors the join logic from your earlier SQL.
+ - Moved markdown docs into `docs/` with clearer names, refreshed README links.
 
 ## How to run it (short version)
 - JSON → CSV (quick): `python -m scripts.cleanse --verbose`
@@ -61,4 +62,4 @@ Date: 2025-11-07
 - Add a small scoring notebook and a Streamlit MVP (why: get stakeholder feedback quickly on rank outputs and narrative quality).
 - Re‑geocode the 2 bad long/lat points and document geocoding bounds (why: avoid skewing NEARBY edges and distance‑based features).
 
-Next up: wire the alias and category mappings directly into the cleanse/export step so it’s automatic, repeatable, and versioned.
+Next up: wire the alias and category mappings directly into the cleanse/export step so it’s automatic, repeatable, and versioned. (Done.) Added `franchise_likelihood` integration.

@@ -38,7 +38,7 @@ Pick the best areas to open a new location for a given brand in San Diego + Impe
 - A tiny scoring notebook and a minimal Streamlit app that ranks regions from CSVs
 
 ## ▶️ Running the pipeline (easy mode)
-- One‑command runner: `python -m scripts.implementation1 --mode quick` (CSV only) or `--mode postgis` (full spatial route). See `implementation1.md` for flags and options.
+- One‑command runner: `python -m scripts.implementation1 --mode quick` (CSV only) or `--mode postgis` (full spatial route). See `docs/implementation1_runner_guide.md` for flags and options.
 - Streamlit MVP: `streamlit run services/app.py` (expects `exports/` CSVs)
 
 ## 📈 Scoring (MVP)
@@ -57,3 +57,14 @@ Tune weights, then add competition density and cannibalization once relationship
 - Optional: drive‑time catchments (isochrones) and mobile foot traffic
 
 Have fun poking around, and if something looks off, it probably needs a tiny nudge (or a bigger coffee).
+
+---
+
+More docs:
+- Detailed plan: `docs/plan_detailed_franchise_planner.md`
+- Parallel plan: `docs/plan_parallel_execution.md`
+- Changes implemented: `docs/changes_implemented_summary.md`
+- Implementation runner guide: `docs/implementation1_runner_guide.md`
+- Potential issues and mitigations: `docs/potential_issues_and_mitigations.md`
+
+Note: If `franchise_likelihood_filtered.csv` is present at repo root, exports will include a `franchise_likelihood` score per location/business based on category mapping.
