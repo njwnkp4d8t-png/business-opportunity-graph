@@ -1,3 +1,5 @@
+# Docstring: A module-level string that explains what the file does.
+# It helps readers, IDEs, and tooling quickly understand purpose/usage.
 """
 Load admin place tables (states, counties, cities, communities, zipcodes) into PostGIS.
 
@@ -68,4 +70,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

@@ -1,3 +1,5 @@
+# Docstring: A module-level string that explains what the file does.
+# It helps readers, IDEs, and tooling quickly understand purpose/usage.
 """
 Cleanse and export CSVs for Neo4j/PostGIS loads.
 

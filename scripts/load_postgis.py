@@ -1,3 +1,5 @@
+# Docstring: A module-level string that explains what the file does.
+# It helps readers, IDEs, and tooling quickly understand purpose/usage.
 """
 Load JSON data into PostGIS tables defined in postgis_schema.sql.
 

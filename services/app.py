@@ -1,3 +1,12 @@
+"""
+# Docstring: A module-level string that explains what the file does.
+# It helps readers, IDEs, and tooling quickly understand purpose/usage.
+
+Modern Streamlit app for ranking Block Groups with adjustable weights,
+county filters, franchise likelihood integration, and distance-based
+cannibalization penalty. Includes a map and CSV export.
+"""
+
 import os
 import pathlib
 from typing import Optional
@@ -201,4 +210,3 @@ with tab3:
     st.write("Score min/max:", float(df_sorted["score"].min()), float(df_sorted["score"].max()))
     if loc is not None and brand:
         st.write("Brand locations found:", int((loc["name"].str.contains(brand, case=False, na=False)).sum()))
-

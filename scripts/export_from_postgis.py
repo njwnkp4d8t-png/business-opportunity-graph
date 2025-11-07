@@ -1,3 +1,5 @@
+# Docstring: A module-level string that explains what the file does.
+# It helps readers, IDEs, and tooling quickly understand purpose/usage.
 """
 Export canonical CSVs for Neo4j directly from PostGIS after spatial assignments.
 
@@ -114,4 +116,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

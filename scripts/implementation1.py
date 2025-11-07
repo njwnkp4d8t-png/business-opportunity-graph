@@ -1,3 +1,5 @@
+# Docstring: A module-level string that explains what the file does.
+# It helps readers, IDEs, and tooling quickly understand purpose/usage.
 """
 Implementation 1: Orchestrates the franchise planner data pipeline.
 
@@ -142,4 +144,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
