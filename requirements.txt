@@ -1,6 +1,8 @@
 pandas
 numpy
 psycopg2-binary
+matplotlib
+seaborn
 neo4j
 geopandas
 python-dotenv
