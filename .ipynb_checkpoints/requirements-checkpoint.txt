@@ -1,0 +1,6 @@
+pandas
+numpy
+psycopg2-binary
+neo4j
+python-dotenv
+geopandas
