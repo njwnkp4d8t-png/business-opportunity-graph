@@ -7,3 +7,4 @@ psycopg2-binary
 neo4j
 python-dotenv
 osmnx
+cenpy
