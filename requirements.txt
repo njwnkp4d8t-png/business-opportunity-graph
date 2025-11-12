@@ -1,8 +1,9 @@
-pandas
 numpy
-psycopg2-binary
+pandas
+geopandas
 matplotlib
 seaborn
+psycopg2-binary
 neo4j
-geopandas
 python-dotenv
+osmnx
