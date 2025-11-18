@@ -10,3 +10,4 @@ osmnx
 cenpy
 rasterio
 contextily
+scikit-learn
