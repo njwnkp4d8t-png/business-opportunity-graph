@@ -8,3 +8,5 @@ neo4j
 python-dotenv
 osmnx
 cenpy
+rasterio
+contextily
