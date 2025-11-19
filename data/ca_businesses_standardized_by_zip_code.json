@@ -1,0 +1,4244 @@
+{
+  "group_by": "zip_code",
+  "summary": {
+    "group_by": "zip_code",
+    "territory_count": 70,
+    "total_businesses": 39593
+  },
+  "territories": [
+    {
+      "territory_id": "91902",
+      "business_count": 174,
+      "franchise_count": 26,
+      "independent_count": 148,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.14942528735632185,
+      "pct_independent": 0.8505747126436781,
+      "has_valid_coordinates_count": 174,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.379069767441863,
+      "classification_confidence_mean": 0.5551724137931039,
+      "classification_method_counts": {
+        "rule_based": 103,
+        "unclassified": 71
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 72
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 50
+        },
+        {
+          "name": "Personal Services",
+          "count": 16
+        },
+        {
+          "name": "Professional Services",
+          "count": 11
+        },
+        {
+          "name": "Entertainment & Recreation",
+          "count": 10
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 71
+        },
+        {
+          "name": "Restaurants",
+          "count": 26
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 12
+        },
+        {
+          "name": "Medical Offices",
+          "count": 8
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "territory_id": "91910",
+      "business_count": 1009,
+      "franchise_count": 279,
+      "independent_count": 730,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.27651139742319125,
+      "pct_independent": 0.7234886025768087,
+      "has_valid_coordinates_count": 1009,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.220019821605552,
+      "classification_confidence_mean": 0.5667988107036637,
+      "classification_method_counts": {
+        "rule_based": 609,
+        "unclassified": 400
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 411
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 253
+        },
+        {
+          "name": "Personal Services",
+          "count": 70
+        },
+        {
+          "name": "Retail",
+          "count": 60
+        },
+        {
+          "name": "Professional Services",
+          "count": 57
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 400
+        },
+        {
+          "name": "Restaurants",
+          "count": 153
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 54
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 38
+        },
+        {
+          "name": "Financial Services",
+          "count": 34
+        }
+      ]
+    },
+    {
+      "territory_id": "91911",
+      "business_count": 1003,
+      "franchise_count": 202,
+      "independent_count": 801,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.20139581256231306,
+      "pct_independent": 0.7986041874376869,
+      "has_valid_coordinates_count": 1003,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.259322033898306,
+      "classification_confidence_mean": 0.4917248255234272,
+      "classification_method_counts": {
+        "rule_based": 523,
+        "unclassified": 480
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 486
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 196
+        },
+        {
+          "name": "Retail",
+          "count": 79
+        },
+        {
+          "name": "Personal Services",
+          "count": 61
+        },
+        {
+          "name": "Automotive Services",
+          "count": 59
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 480
+        },
+        {
+          "name": "Restaurants",
+          "count": 127
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 47
+        },
+        {
+          "name": "Automotive Retail",
+          "count": 37
+        },
+        {
+          "name": "Repair & Maintenance",
+          "count": 35
+        }
+      ]
+    },
+    {
+      "territory_id": "91913",
+      "business_count": 132,
+      "franchise_count": 20,
+      "independent_count": 112,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.15151515151515152,
+      "pct_independent": 0.8484848484848485,
+      "has_valid_coordinates_count": 132,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.325757575757578,
+      "classification_confidence_mean": 0.4469696969696966,
+      "classification_method_counts": {
+        "unclassified": 68,
+        "rule_based": 64
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 68
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 35
+        },
+        {
+          "name": "Home Services",
+          "count": 11
+        },
+        {
+          "name": "Professional Services",
+          "count": 5
+        },
+        {
+          "name": "Personal Services",
+          "count": 4
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 68
+        },
+        {
+          "name": "Restaurants",
+          "count": 26
+        },
+        {
+          "name": "Construction & Contractors",
+          "count": 10
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 5
+        },
+        {
+          "name": "Medical Offices",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "territory_id": "91914",
+      "business_count": 196,
+      "franchise_count": 57,
+      "independent_count": 139,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.29081632653061223,
+      "pct_independent": 0.7091836734693877,
+      "has_valid_coordinates_count": 196,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.382142857142856,
+      "classification_confidence_mean": 0.5377551020408168,
+      "classification_method_counts": {
+        "unclassified": 83,
+        "rule_based": 113
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 85
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 36
+        },
+        {
+          "name": "Personal Services",
+          "count": 24
+        },
+        {
+          "name": "Professional Services",
+          "count": 19
+        },
+        {
+          "name": "Healthcare",
+          "count": 12
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 83
+        },
+        {
+          "name": "Restaurants",
+          "count": 23
+        },
+        {
+          "name": "Fitness & Recreation",
+          "count": 12
+        },
+        {
+          "name": "Real Estate",
+          "count": 11
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "territory_id": "91915",
+      "business_count": 264,
+      "franchise_count": 142,
+      "independent_count": 121,
+      "unknown_franchise_count": 1,
+      "pct_franchise": 0.5378787878787878,
+      "pct_independent": 0.4583333333333333,
+      "has_valid_coordinates_count": 264,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.264772727272728,
+      "classification_confidence_mean": 0.6352272727272741,
+      "classification_method_counts": {
+        "unclassified": 84,
+        "rule_based": 180
+      },
+      "top_sectors": [
+        {
+          "name": "Food & Beverage",
+          "count": 93
+        },
+        {
+          "name": "Other Services",
+          "count": 86
+        },
+        {
+          "name": "Personal Services",
+          "count": 29
+        },
+        {
+          "name": "Retail",
+          "count": 18
+        },
+        {
+          "name": "Professional Services",
+          "count": 10
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 84
+        },
+        {
+          "name": "Restaurants",
+          "count": 62
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 22
+        },
+        {
+          "name": "Clothing & Apparel",
+          "count": 12
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 9
+        }
+      ]
+    },
+    {
+      "territory_id": "91932",
+      "business_count": 249,
+      "franchise_count": 39,
+      "independent_count": 210,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.1566265060240964,
+      "pct_independent": 0.8433734939759037,
+      "has_valid_coordinates_count": 249,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.319678714859437,
+      "classification_confidence_mean": 0.5570281124498002,
+      "classification_method_counts": {
+        "unclassified": 101,
+        "rule_based": 148
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 104
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 85
+        },
+        {
+          "name": "Personal Services",
+          "count": 23
+        },
+        {
+          "name": "Automotive Services",
+          "count": 7
+        },
+        {
+          "name": "Professional Services",
+          "count": 6
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 101
+        },
+        {
+          "name": "Restaurants",
+          "count": 47
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 17
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 15
+        },
+        {
+          "name": "Specialty Food",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "territory_id": "91942",
+      "business_count": 957,
+      "franchise_count": 222,
+      "independent_count": 735,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.23197492163009403,
+      "pct_independent": 0.768025078369906,
+      "has_valid_coordinates_count": 957,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.3362591431557025,
+      "classification_confidence_mean": 0.5221525600835916,
+      "classification_method_counts": {
+        "rule_based": 533,
+        "unclassified": 424
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 430
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 201
+        },
+        {
+          "name": "Personal Services",
+          "count": 94
+        },
+        {
+          "name": "Healthcare",
+          "count": 74
+        },
+        {
+          "name": "Professional Services",
+          "count": 54
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 424
+        },
+        {
+          "name": "Restaurants",
+          "count": 115
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 75
+        },
+        {
+          "name": "Medical Offices",
+          "count": 61
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 31
+        }
+      ]
+    },
+    {
+      "territory_id": "91945",
+      "business_count": 374,
+      "franchise_count": 95,
+      "independent_count": 279,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.2540106951871658,
+      "pct_independent": 0.7459893048128342,
+      "has_valid_coordinates_count": 374,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.238502673796791,
+      "classification_confidence_mean": 0.5216577540106961,
+      "classification_method_counts": {
+        "rule_based": 208,
+        "unclassified": 166
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 171
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 84
+        },
+        {
+          "name": "Retail",
+          "count": 31
+        },
+        {
+          "name": "Automotive Services",
+          "count": 24
+        },
+        {
+          "name": "Personal Services",
+          "count": 22
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 166
+        },
+        {
+          "name": "Restaurants",
+          "count": 54
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 19
+        },
+        {
+          "name": "Repair & Maintenance",
+          "count": 17
+        },
+        {
+          "name": "Automotive Retail",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "territory_id": "91950",
+      "business_count": 1042,
+      "franchise_count": 307,
+      "independent_count": 735,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.2946257197696737,
+      "pct_independent": 0.7053742802303263,
+      "has_valid_coordinates_count": 1042,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.198560460652588,
+      "classification_confidence_mean": 0.5319577735124729,
+      "classification_method_counts": {
+        "unclassified": 451,
+        "rule_based": 591
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 459
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 294
+        },
+        {
+          "name": "Retail",
+          "count": 71
+        },
+        {
+          "name": "Personal Services",
+          "count": 66
+        },
+        {
+          "name": "Automotive Services",
+          "count": 33
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 451
+        },
+        {
+          "name": "Restaurants",
+          "count": 169
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 50
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 39
+        },
+        {
+          "name": "Specialty Food",
+          "count": 30
+        }
+      ]
+    },
+    {
+      "territory_id": "91977",
+      "business_count": 451,
+      "franchise_count": 81,
+      "independent_count": 370,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.17960088691796008,
+      "pct_independent": 0.8203991130820399,
+      "has_valid_coordinates_count": 451,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.22106430155211,
+      "classification_confidence_mean": 0.5221729490022186,
+      "classification_method_counts": {
+        "unclassified": 201,
+        "rule_based": 250
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 203
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 111
+        },
+        {
+          "name": "Automotive Services",
+          "count": 39
+        },
+        {
+          "name": "Retail",
+          "count": 28
+        },
+        {
+          "name": "Personal Services",
+          "count": 19
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 201
+        },
+        {
+          "name": "Restaurants",
+          "count": 57
+        },
+        {
+          "name": "Repair & Maintenance",
+          "count": 30
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 20
+        },
+        {
+          "name": "Specialty Food",
+          "count": 19
+        }
+      ]
+    },
+    {
+      "territory_id": "92008",
+      "business_count": 1012,
+      "franchise_count": 266,
+      "independent_count": 746,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.2628458498023715,
+      "pct_independent": 0.7371541501976284,
+      "has_valid_coordinates_count": 1012,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.33076162215629,
+      "classification_confidence_mean": 0.5404150197628428,
+      "classification_method_counts": {
+        "rule_based": 582,
+        "unclassified": 430
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 444
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 235
+        },
+        {
+          "name": "Retail",
+          "count": 78
+        },
+        {
+          "name": "Personal Services",
+          "count": 77
+        },
+        {
+          "name": "Professional Services",
+          "count": 59
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 430
+        },
+        {
+          "name": "Restaurants",
+          "count": 143
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 61
+        },
+        {
+          "name": "Clothing & Apparel",
+          "count": 56
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 29
+        }
+      ]
+    },
+    {
+      "territory_id": "92009",
+      "business_count": 346,
+      "franchise_count": 133,
+      "independent_count": 213,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.38439306358381503,
+      "pct_independent": 0.615606936416185,
+      "has_valid_coordinates_count": 346,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.31849710982659,
+      "classification_confidence_mean": 0.5893063583815044,
+      "classification_method_counts": {
+        "unclassified": 129,
+        "rule_based": 217
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 132
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 99
+        },
+        {
+          "name": "Personal Services",
+          "count": 34
+        },
+        {
+          "name": "Professional Services",
+          "count": 16
+        },
+        {
+          "name": "Healthcare",
+          "count": 16
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 129
+        },
+        {
+          "name": "Restaurants",
+          "count": 61
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 22
+        },
+        {
+          "name": "Clothing & Apparel",
+          "count": 15
+        },
+        {
+          "name": "Financial Services",
+          "count": 13
+        }
+      ]
+    },
+    {
+      "territory_id": "92010",
+      "business_count": 141,
+      "franchise_count": 22,
+      "independent_count": 119,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.15602836879432624,
+      "pct_independent": 0.8439716312056738,
+      "has_valid_coordinates_count": 141,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.287142857142859,
+      "classification_confidence_mean": 0.41489361702127636,
+      "classification_method_counts": {
+        "unclassified": 78,
+        "rule_based": 63
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 80
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 22
+        },
+        {
+          "name": "Professional Services",
+          "count": 10
+        },
+        {
+          "name": "Home Services",
+          "count": 6
+        },
+        {
+          "name": "Entertainment & Recreation",
+          "count": 6
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 78
+        },
+        {
+          "name": "Restaurants",
+          "count": 11
+        },
+        {
+          "name": "Real Estate",
+          "count": 5
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 4
+        },
+        {
+          "name": "Fitness & Recreation",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "territory_id": "92011",
+      "business_count": 285,
+      "franchise_count": 69,
+      "independent_count": 216,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.24210526315789474,
+      "pct_independent": 0.7578947368421053,
+      "has_valid_coordinates_count": 285,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.3140350877192954,
+      "classification_confidence_mean": 0.5452631578947379,
+      "classification_method_counts": {
+        "rule_based": 166,
+        "unclassified": 119
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 121
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 61
+        },
+        {
+          "name": "Personal Services",
+          "count": 29
+        },
+        {
+          "name": "Healthcare",
+          "count": 19
+        },
+        {
+          "name": "Professional Services",
+          "count": 18
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 119
+        },
+        {
+          "name": "Restaurants",
+          "count": 36
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 20
+        },
+        {
+          "name": "Medical Offices",
+          "count": 14
+        },
+        {
+          "name": "Hotels & Motels",
+          "count": 9
+        }
+      ]
+    },
+    {
+      "territory_id": "92014",
+      "business_count": 293,
+      "franchise_count": 43,
+      "independent_count": 250,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.14675767918088736,
+      "pct_independent": 0.8532423208191127,
+      "has_valid_coordinates_count": 293,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.441638225255971,
+      "classification_confidence_mean": 0.5747440273037555,
+      "classification_method_counts": {
+        "rule_based": 180,
+        "unclassified": 113
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 114
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 91
+        },
+        {
+          "name": "Personal Services",
+          "count": 22
+        },
+        {
+          "name": "Professional Services",
+          "count": 21
+        },
+        {
+          "name": "Entertainment & Recreation",
+          "count": 11
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 113
+        },
+        {
+          "name": "Restaurants",
+          "count": 56
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 18
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 15
+        },
+        {
+          "name": "Real Estate",
+          "count": 13
+        }
+      ]
+    },
+    {
+      "territory_id": "92020",
+      "business_count": 1091,
+      "franchise_count": 280,
+      "independent_count": 811,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.2566452795600367,
+      "pct_independent": 0.7433547204399633,
+      "has_valid_coordinates_count": 1091,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.251100917431193,
+      "classification_confidence_mean": 0.49596700274976796,
+      "classification_method_counts": {
+        "rule_based": 575,
+        "unclassified": 516
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 528
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 173
+        },
+        {
+          "name": "Retail",
+          "count": 82
+        },
+        {
+          "name": "Personal Services",
+          "count": 61
+        },
+        {
+          "name": "Home Services",
+          "count": 58
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 516
+        },
+        {
+          "name": "Restaurants",
+          "count": 93
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 47
+        },
+        {
+          "name": "Repair & Maintenance",
+          "count": 40
+        },
+        {
+          "name": "Construction & Contractors",
+          "count": 36
+        }
+      ]
+    },
+    {
+      "territory_id": "92024",
+      "business_count": 1027,
+      "franchise_count": 222,
+      "independent_count": 805,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.21616358325219084,
+      "pct_independent": 0.7838364167478091,
+      "has_valid_coordinates_count": 1027,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.436027263875371,
+      "classification_confidence_mean": 0.537000973709831,
+      "classification_method_counts": {
+        "rule_based": 587,
+        "unclassified": 440
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 446
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 292
+        },
+        {
+          "name": "Personal Services",
+          "count": 77
+        },
+        {
+          "name": "Healthcare",
+          "count": 56
+        },
+        {
+          "name": "Retail",
+          "count": 49
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 440
+        },
+        {
+          "name": "Restaurants",
+          "count": 180
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 53
+        },
+        {
+          "name": "Medical Offices",
+          "count": 43
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 34
+        }
+      ]
+    },
+    {
+      "territory_id": "92025",
+      "business_count": 1137,
+      "franchise_count": 292,
+      "independent_count": 845,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.256816182937555,
+      "pct_independent": 0.7431838170624451,
+      "has_valid_coordinates_count": 1137,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.311609498680741,
+      "classification_confidence_mean": 0.5502198768689492,
+      "classification_method_counts": {
+        "unclassified": 471,
+        "rule_based": 666
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 474
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 264
+        },
+        {
+          "name": "Retail",
+          "count": 84
+        },
+        {
+          "name": "Personal Services",
+          "count": 83
+        },
+        {
+          "name": "Professional Services",
+          "count": 54
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 471
+        },
+        {
+          "name": "Restaurants",
+          "count": 161
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 65
+        },
+        {
+          "name": "Clothing & Apparel",
+          "count": 42
+        },
+        {
+          "name": "Medical Offices",
+          "count": 41
+        }
+      ]
+    },
+    {
+      "territory_id": "92026",
+      "business_count": 313,
+      "franchise_count": 61,
+      "independent_count": 252,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.19488817891373802,
+      "pct_independent": 0.805111821086262,
+      "has_valid_coordinates_count": 313,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.242172523961661,
+      "classification_confidence_mean": 0.5214057507987229,
+      "classification_method_counts": {
+        "rule_based": 174,
+        "unclassified": 139
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 141
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 56
+        },
+        {
+          "name": "Personal Services",
+          "count": 25
+        },
+        {
+          "name": "Retail",
+          "count": 18
+        },
+        {
+          "name": "Entertainment & Recreation",
+          "count": 15
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 139
+        },
+        {
+          "name": "Restaurants",
+          "count": 30
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 20
+        },
+        {
+          "name": "Hotels & Motels",
+          "count": 12
+        },
+        {
+          "name": "Sports & Recreation",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "territory_id": "92027",
+      "business_count": 337,
+      "franchise_count": 88,
+      "independent_count": 249,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.26112759643916916,
+      "pct_independent": 0.7388724035608308,
+      "has_valid_coordinates_count": 337,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.231750741839762,
+      "classification_confidence_mean": 0.5127596439169151,
+      "classification_method_counts": {
+        "rule_based": 184,
+        "unclassified": 153
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 157
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 92
+        },
+        {
+          "name": "Personal Services",
+          "count": 24
+        },
+        {
+          "name": "Technology",
+          "count": 13
+        },
+        {
+          "name": "Retail",
+          "count": 13
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 153
+        },
+        {
+          "name": "Restaurants",
+          "count": 51
+        },
+        {
+          "name": "Specialty Food",
+          "count": 16
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 14
+        },
+        {
+          "name": "Telecommunications",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "territory_id": "92029",
+      "business_count": 478,
+      "franchise_count": 126,
+      "independent_count": 352,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.26359832635983266,
+      "pct_independent": 0.7364016736401674,
+      "has_valid_coordinates_count": 478,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.379707112970717,
+      "classification_confidence_mean": 0.45271966527196733,
+      "classification_method_counts": {
+        "rule_based": 228,
+        "unclassified": 250
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 254
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 58
+        },
+        {
+          "name": "Home Services",
+          "count": 42
+        },
+        {
+          "name": "Retail",
+          "count": 41
+        },
+        {
+          "name": "Automotive Services",
+          "count": 36
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 250
+        },
+        {
+          "name": "Restaurants",
+          "count": 35
+        },
+        {
+          "name": "Repair & Maintenance",
+          "count": 34
+        },
+        {
+          "name": "Construction & Contractors",
+          "count": 27
+        },
+        {
+          "name": "Automotive Retail",
+          "count": 23
+        }
+      ]
+    },
+    {
+      "territory_id": "92037",
+      "business_count": 1026,
+      "franchise_count": 152,
+      "independent_count": 874,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.14814814814814814,
+      "pct_independent": 0.8518518518518519,
+      "has_valid_coordinates_count": 1026,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.4334307992202735,
+      "classification_confidence_mean": 0.5465886939571113,
+      "classification_method_counts": {
+        "unclassified": 426,
+        "rule_based": 600
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 447
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 267
+        },
+        {
+          "name": "Personal Services",
+          "count": 86
+        },
+        {
+          "name": "Healthcare",
+          "count": 58
+        },
+        {
+          "name": "Professional Services",
+          "count": 53
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 426
+        },
+        {
+          "name": "Restaurants",
+          "count": 172
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 63
+        },
+        {
+          "name": "Medical Offices",
+          "count": 44
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 31
+        }
+      ]
+    },
+    {
+      "territory_id": "92054",
+      "business_count": 1036,
+      "franchise_count": 233,
+      "independent_count": 803,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.2249034749034749,
+      "pct_independent": 0.775096525096525,
+      "has_valid_coordinates_count": 1036,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.342456479690526,
+      "classification_confidence_mean": 0.5395752895752862,
+      "classification_method_counts": {
+        "rule_based": 597,
+        "unclassified": 439
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 449
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 313
+        },
+        {
+          "name": "Personal Services",
+          "count": 82
+        },
+        {
+          "name": "Retail",
+          "count": 46
+        },
+        {
+          "name": "Automotive Services",
+          "count": 28
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 439
+        },
+        {
+          "name": "Restaurants",
+          "count": 182
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 54
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 47
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 35
+        }
+      ]
+    },
+    {
+      "territory_id": "92056",
+      "business_count": 509,
+      "franchise_count": 138,
+      "independent_count": 371,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.27111984282907664,
+      "pct_independent": 0.7288801571709234,
+      "has_valid_coordinates_count": 509,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.233070866141737,
+      "classification_confidence_mean": 0.5062868369351682,
+      "classification_method_counts": {
+        "rule_based": 275,
+        "unclassified": 234
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 243
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 111
+        },
+        {
+          "name": "Personal Services",
+          "count": 36
+        },
+        {
+          "name": "Healthcare",
+          "count": 27
+        },
+        {
+          "name": "Professional Services",
+          "count": 19
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 234
+        },
+        {
+          "name": "Restaurants",
+          "count": 72
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 28
+        },
+        {
+          "name": "Medical Offices",
+          "count": 23
+        },
+        {
+          "name": "Financial Services",
+          "count": 14
+        }
+      ]
+    },
+    {
+      "territory_id": "92064",
+      "business_count": 760,
+      "franchise_count": 193,
+      "independent_count": 567,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.25394736842105264,
+      "pct_independent": 0.7460526315789474,
+      "has_valid_coordinates_count": 760,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.365657894736849,
+      "classification_confidence_mean": 0.5097368421052617,
+      "classification_method_counts": {
+        "rule_based": 413,
+        "unclassified": 347
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 353
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 172
+        },
+        {
+          "name": "Personal Services",
+          "count": 67
+        },
+        {
+          "name": "Healthcare",
+          "count": 36
+        },
+        {
+          "name": "Automotive Services",
+          "count": 30
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 347
+        },
+        {
+          "name": "Restaurants",
+          "count": 108
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 47
+        },
+        {
+          "name": "Medical Offices",
+          "count": 29
+        },
+        {
+          "name": "Repair & Maintenance",
+          "count": 23
+        }
+      ]
+    },
+    {
+      "territory_id": "92065",
+      "business_count": 456,
+      "franchise_count": 65,
+      "independent_count": 391,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.1425438596491228,
+      "pct_independent": 0.8574561403508771,
+      "has_valid_coordinates_count": 456,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.398026315789479,
+      "classification_confidence_mean": 0.456359649122808,
+      "classification_method_counts": {
+        "unclassified": 236,
+        "rule_based": 220
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 241
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 88
+        },
+        {
+          "name": "Personal Services",
+          "count": 28
+        },
+        {
+          "name": "Retail",
+          "count": 24
+        },
+        {
+          "name": "Automotive Services",
+          "count": 19
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 236
+        },
+        {
+          "name": "Restaurants",
+          "count": 47
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 19
+        },
+        {
+          "name": "Repair & Maintenance",
+          "count": 15
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 13
+        }
+      ]
+    },
+    {
+      "territory_id": "92067",
+      "business_count": 57,
+      "franchise_count": 5,
+      "independent_count": 52,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.08771929824561403,
+      "pct_independent": 0.9122807017543859,
+      "has_valid_coordinates_count": 57,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.652631578947368,
+      "classification_confidence_mean": 0.7192982456140349,
+      "classification_method_counts": {
+        "rule_based": 44,
+        "unclassified": 13
+      },
+      "top_sectors": [
+        {
+          "name": "Food & Beverage",
+          "count": 16
+        },
+        {
+          "name": "Other Services",
+          "count": 13
+        },
+        {
+          "name": "Professional Services",
+          "count": 8
+        },
+        {
+          "name": "Entertainment & Recreation",
+          "count": 5
+        },
+        {
+          "name": "Personal Services",
+          "count": 4
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 13
+        },
+        {
+          "name": "Restaurants",
+          "count": 10
+        },
+        {
+          "name": "Real Estate",
+          "count": 6
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 3
+        },
+        {
+          "name": "Sports & Recreation",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "territory_id": "92071",
+      "business_count": 760,
+      "franchise_count": 207,
+      "independent_count": 553,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.2723684210526316,
+      "pct_independent": 0.7276315789473684,
+      "has_valid_coordinates_count": 760,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.360394736842107,
+      "classification_confidence_mean": 0.5367105263157878,
+      "classification_method_counts": {
+        "unclassified": 325,
+        "rule_based": 435
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 329
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 175
+        },
+        {
+          "name": "Personal Services",
+          "count": 65
+        },
+        {
+          "name": "Retail",
+          "count": 42
+        },
+        {
+          "name": "Home Services",
+          "count": 35
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 325
+        },
+        {
+          "name": "Restaurants",
+          "count": 101
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 48
+        },
+        {
+          "name": "Automotive Retail",
+          "count": 25
+        },
+        {
+          "name": "Construction & Contractors",
+          "count": 24
+        }
+      ]
+    },
+    {
+      "territory_id": "92075",
+      "business_count": 293,
+      "franchise_count": 50,
+      "independent_count": 243,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.17064846416382254,
+      "pct_independent": 0.8293515358361775,
+      "has_valid_coordinates_count": 293,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.494539249146757,
+      "classification_confidence_mean": 0.540273037542663,
+      "classification_method_counts": {
+        "unclassified": 124,
+        "rule_based": 169
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 127
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 75
+        },
+        {
+          "name": "Personal Services",
+          "count": 34
+        },
+        {
+          "name": "Retail",
+          "count": 18
+        },
+        {
+          "name": "Healthcare",
+          "count": 11
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 124
+        },
+        {
+          "name": "Restaurants",
+          "count": 41
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 21
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 17
+        },
+        {
+          "name": "Fitness & Recreation",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "territory_id": "92078",
+      "business_count": 708,
+      "franchise_count": 158,
+      "independent_count": 550,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.2231638418079096,
+      "pct_independent": 0.7768361581920904,
+      "has_valid_coordinates_count": 708,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.383757062146896,
+      "classification_confidence_mean": 0.5637005649717494,
+      "classification_method_counts": {
+        "unclassified": 281,
+        "rule_based": 427
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 287
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 182
+        },
+        {
+          "name": "Personal Services",
+          "count": 68
+        },
+        {
+          "name": "Healthcare",
+          "count": 30
+        },
+        {
+          "name": "Automotive Services",
+          "count": 29
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 281
+        },
+        {
+          "name": "Restaurants",
+          "count": 116
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 53
+        },
+        {
+          "name": "Repair & Maintenance",
+          "count": 25
+        },
+        {
+          "name": "Medical Offices",
+          "count": 24
+        }
+      ]
+    },
+    {
+      "territory_id": "92081",
+      "business_count": 541,
+      "franchise_count": 99,
+      "independent_count": 442,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.18299445471349354,
+      "pct_independent": 0.8170055452865065,
+      "has_valid_coordinates_count": 541,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.32329020332717,
+      "classification_confidence_mean": 0.5086876155268029,
+      "classification_method_counts": {
+        "unclassified": 246,
+        "rule_based": 295
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 254
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 104
+        },
+        {
+          "name": "Personal Services",
+          "count": 42
+        },
+        {
+          "name": "Healthcare",
+          "count": 29
+        },
+        {
+          "name": "Home Services",
+          "count": 27
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 246
+        },
+        {
+          "name": "Restaurants",
+          "count": 57
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 24
+        },
+        {
+          "name": "Medical Offices",
+          "count": 22
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 21
+        }
+      ]
+    },
+    {
+      "territory_id": "92101",
+      "business_count": 2612,
+      "franchise_count": 465,
+      "independent_count": 2147,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.17802450229709035,
+      "pct_independent": 0.8219754977029097,
+      "has_valid_coordinates_count": 2612,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.238160919540223,
+      "classification_confidence_mean": 0.5779096477794841,
+      "classification_method_counts": {
+        "unclassified": 1002,
+        "rule_based": 1610
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 1048
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 875
+        },
+        {
+          "name": "Professional Services",
+          "count": 172
+        },
+        {
+          "name": "Personal Services",
+          "count": 141
+        },
+        {
+          "name": "Retail",
+          "count": 92
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 1002
+        },
+        {
+          "name": "Restaurants",
+          "count": 497
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 162
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 126
+        },
+        {
+          "name": "Legal Services",
+          "count": 98
+        }
+      ]
+    },
+    {
+      "territory_id": "92102",
+      "business_count": 400,
+      "franchise_count": 36,
+      "independent_count": 364,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.09,
+      "pct_independent": 0.91,
+      "has_valid_coordinates_count": 400,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.35714285714286,
+      "classification_confidence_mean": 0.525000000000001,
+      "classification_method_counts": {
+        "unclassified": 177,
+        "rule_based": 223
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 182
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 126
+        },
+        {
+          "name": "Personal Services",
+          "count": 23
+        },
+        {
+          "name": "Retail",
+          "count": 20
+        },
+        {
+          "name": "Automotive Services",
+          "count": 12
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 177
+        },
+        {
+          "name": "Restaurants",
+          "count": 66
+        },
+        {
+          "name": "Specialty Food",
+          "count": 24
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 17
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 16
+        }
+      ]
+    },
+    {
+      "territory_id": "92103",
+      "business_count": 967,
+      "franchise_count": 110,
+      "independent_count": 857,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.11375387797311272,
+      "pct_independent": 0.8862461220268872,
+      "has_valid_coordinates_count": 967,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.408893485005169,
+      "classification_confidence_mean": 0.5952430196483933,
+      "classification_method_counts": {
+        "unclassified": 353,
+        "rule_based": 614
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 360
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 313
+        },
+        {
+          "name": "Personal Services",
+          "count": 99
+        },
+        {
+          "name": "Healthcare",
+          "count": 77
+        },
+        {
+          "name": "Professional Services",
+          "count": 36
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 353
+        },
+        {
+          "name": "Restaurants",
+          "count": 193
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 79
+        },
+        {
+          "name": "Medical Offices",
+          "count": 64
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 48
+        }
+      ]
+    },
+    {
+      "territory_id": "92104",
+      "business_count": 750,
+      "franchise_count": 109,
+      "independent_count": 641,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.14533333333333334,
+      "pct_independent": 0.8546666666666667,
+      "has_valid_coordinates_count": 750,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.435466666666663,
+      "classification_confidence_mean": 0.6279999999999972,
+      "classification_method_counts": {
+        "rule_based": 501,
+        "unclassified": 249
+      },
+      "top_sectors": [
+        {
+          "name": "Food & Beverage",
+          "count": 297
+        },
+        {
+          "name": "Other Services",
+          "count": 251
+        },
+        {
+          "name": "Personal Services",
+          "count": 58
+        },
+        {
+          "name": "Retail",
+          "count": 38
+        },
+        {
+          "name": "Automotive Services",
+          "count": 26
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 249
+        },
+        {
+          "name": "Restaurants",
+          "count": 164
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 64
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 43
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 28
+        }
+      ]
+    },
+    {
+      "territory_id": "92105",
+      "business_count": 494,
+      "franchise_count": 82,
+      "independent_count": 412,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.1659919028340081,
+      "pct_independent": 0.8340080971659919,
+      "has_valid_coordinates_count": 494,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.2408906882591095,
+      "classification_confidence_mean": 0.5244939271255071,
+      "classification_method_counts": {
+        "unclassified": 218,
+        "rule_based": 276
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 219
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 145
+        },
+        {
+          "name": "Personal Services",
+          "count": 28
+        },
+        {
+          "name": "Retail",
+          "count": 27
+        },
+        {
+          "name": "Automotive Services",
+          "count": 19
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 218
+        },
+        {
+          "name": "Restaurants",
+          "count": 76
+        },
+        {
+          "name": "Specialty Food",
+          "count": 24
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 21
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 19
+        }
+      ]
+    },
+    {
+      "territory_id": "92106",
+      "business_count": 487,
+      "franchise_count": 67,
+      "independent_count": 420,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.1375770020533881,
+      "pct_independent": 0.8624229979466119,
+      "has_valid_coordinates_count": 487,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.466940451745379,
+      "classification_confidence_mean": 0.5517453798767976,
+      "classification_method_counts": {
+        "rule_based": 288,
+        "unclassified": 199
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 211
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 153
+        },
+        {
+          "name": "Personal Services",
+          "count": 31
+        },
+        {
+          "name": "Entertainment & Recreation",
+          "count": 25
+        },
+        {
+          "name": "Professional Services",
+          "count": 16
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 199
+        },
+        {
+          "name": "Restaurants",
+          "count": 98
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 20
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 19
+        },
+        {
+          "name": "Hotels & Motels",
+          "count": 16
+        }
+      ]
+    },
+    {
+      "territory_id": "92107",
+      "business_count": 391,
+      "franchise_count": 26,
+      "independent_count": 365,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.06649616368286446,
+      "pct_independent": 0.9335038363171355,
+      "has_valid_coordinates_count": 391,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.543734015345267,
+      "classification_confidence_mean": 0.5992327365728913,
+      "classification_method_counts": {
+        "rule_based": 248,
+        "unclassified": 143
+      },
+      "top_sectors": [
+        {
+          "name": "Food & Beverage",
+          "count": 155
+        },
+        {
+          "name": "Other Services",
+          "count": 146
+        },
+        {
+          "name": "Personal Services",
+          "count": 30
+        },
+        {
+          "name": "Retail",
+          "count": 17
+        },
+        {
+          "name": "Professional Services",
+          "count": 11
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 143
+        },
+        {
+          "name": "Restaurants",
+          "count": 76
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 36
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 22
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 18
+        }
+      ]
+    },
+    {
+      "territory_id": "92108",
+      "business_count": 1158,
+      "franchise_count": 457,
+      "independent_count": 701,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.3946459412780656,
+      "pct_independent": 0.6053540587219344,
+      "has_valid_coordinates_count": 1157,
+      "pct_valid_coordinates": 0.9991364421416234,
+      "avg_rating_mean": 4.224093264248707,
+      "classification_confidence_mean": 0.5658031088082861,
+      "classification_method_counts": {
+        "unclassified": 459,
+        "rule_based": 699
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 470
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 207
+        },
+        {
+          "name": "Professional Services",
+          "count": 131
+        },
+        {
+          "name": "Retail",
+          "count": 98
+        },
+        {
+          "name": "Personal Services",
+          "count": 98
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 459
+        },
+        {
+          "name": "Restaurants",
+          "count": 138
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 80
+        },
+        {
+          "name": "Clothing & Apparel",
+          "count": 77
+        },
+        {
+          "name": "Legal Services",
+          "count": 48
+        }
+      ]
+    },
+    {
+      "territory_id": "92109",
+      "business_count": 1233,
+      "franchise_count": 184,
+      "independent_count": 1049,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.1492295214922952,
+      "pct_independent": 0.8507704785077048,
+      "has_valid_coordinates_count": 1233,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.390024330900245,
+      "classification_confidence_mean": 0.5455798864557947,
+      "classification_method_counts": {
+        "rule_based": 718,
+        "unclassified": 515
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 533
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 394
+        },
+        {
+          "name": "Personal Services",
+          "count": 94
+        },
+        {
+          "name": "Retail",
+          "count": 35
+        },
+        {
+          "name": "Automotive Services",
+          "count": 32
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 515
+        },
+        {
+          "name": "Restaurants",
+          "count": 238
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 58
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 50
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 50
+        }
+      ]
+    },
+    {
+      "territory_id": "92110",
+      "business_count": 1174,
+      "franchise_count": 280,
+      "independent_count": 894,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.23850085178875638,
+      "pct_independent": 0.7614991482112436,
+      "has_valid_coordinates_count": 1174,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.32066609735268,
+      "classification_confidence_mean": 0.5155877342419046,
+      "classification_method_counts": {
+        "rule_based": 642,
+        "unclassified": 532
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 548
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 289
+        },
+        {
+          "name": "Personal Services",
+          "count": 89
+        },
+        {
+          "name": "Retail",
+          "count": 55
+        },
+        {
+          "name": "Automotive Services",
+          "count": 42
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 532
+        },
+        {
+          "name": "Restaurants",
+          "count": 165
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 54
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 40
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 33
+        }
+      ]
+    },
+    {
+      "territory_id": "92111",
+      "business_count": 1339,
+      "franchise_count": 287,
+      "independent_count": 1052,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.21433905899925318,
+      "pct_independent": 0.7856609410007468,
+      "has_valid_coordinates_count": 1339,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.310156833457804,
+      "classification_confidence_mean": 0.5362210604929007,
+      "classification_method_counts": {
+        "unclassified": 572,
+        "rule_based": 767
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 582
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 397
+        },
+        {
+          "name": "Personal Services",
+          "count": 92
+        },
+        {
+          "name": "Automotive Services",
+          "count": 60
+        },
+        {
+          "name": "Retail",
+          "count": 52
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 572
+        },
+        {
+          "name": "Restaurants",
+          "count": 252
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 73
+        },
+        {
+          "name": "Repair & Maintenance",
+          "count": 46
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 45
+        }
+      ]
+    },
+    {
+      "territory_id": "92113",
+      "business_count": 520,
+      "franchise_count": 75,
+      "independent_count": 445,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.14423076923076922,
+      "pct_independent": 0.8557692307692307,
+      "has_valid_coordinates_count": 520,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.271179883945844,
+      "classification_confidence_mean": 0.521153846153847,
+      "classification_method_counts": {
+        "rule_based": 288,
+        "unclassified": 232
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 233
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 158
+        },
+        {
+          "name": "Personal Services",
+          "count": 26
+        },
+        {
+          "name": "Retail",
+          "count": 23
+        },
+        {
+          "name": "Automotive Services",
+          "count": 20
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 232
+        },
+        {
+          "name": "Restaurants",
+          "count": 88
+        },
+        {
+          "name": "Specialty Food",
+          "count": 30
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 25
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 18
+        }
+      ]
+    },
+    {
+      "territory_id": "92114",
+      "business_count": 183,
+      "franchise_count": 32,
+      "independent_count": 151,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.17486338797814208,
+      "pct_independent": 0.825136612021858,
+      "has_valid_coordinates_count": 182,
+      "pct_valid_coordinates": 0.994535519125683,
+      "avg_rating_mean": 4.234972677595629,
+      "classification_confidence_mean": 0.4830601092896177,
+      "classification_method_counts": {
+        "unclassified": 88,
+        "rule_based": 95
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 90
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 47
+        },
+        {
+          "name": "Personal Services",
+          "count": 9
+        },
+        {
+          "name": "Entertainment & Recreation",
+          "count": 8
+        },
+        {
+          "name": "Technology",
+          "count": 6
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 88
+        },
+        {
+          "name": "Restaurants",
+          "count": 24
+        },
+        {
+          "name": "Specialty Food",
+          "count": 9
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 8
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "territory_id": "92115",
+      "business_count": 726,
+      "franchise_count": 151,
+      "independent_count": 575,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.20798898071625344,
+      "pct_independent": 0.7920110192837465,
+      "has_valid_coordinates_count": 725,
+      "pct_valid_coordinates": 0.9986225895316805,
+      "avg_rating_mean": 4.280027548209366,
+      "classification_confidence_mean": 0.6034435261707963,
+      "classification_method_counts": {
+        "rule_based": 468,
+        "unclassified": 258
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 260
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 257
+        },
+        {
+          "name": "Personal Services",
+          "count": 75
+        },
+        {
+          "name": "Retail",
+          "count": 32
+        },
+        {
+          "name": "Automotive Services",
+          "count": 26
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 258
+        },
+        {
+          "name": "Restaurants",
+          "count": 149
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 59
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 37
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 27
+        }
+      ]
+    },
+    {
+      "territory_id": "92116",
+      "business_count": 366,
+      "franchise_count": 26,
+      "independent_count": 340,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.07103825136612021,
+      "pct_independent": 0.9289617486338798,
+      "has_valid_coordinates_count": 366,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.495355191256832,
+      "classification_confidence_mean": 0.5923497267759577,
+      "classification_method_counts": {
+        "rule_based": 231,
+        "unclassified": 135
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 139
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 124
+        },
+        {
+          "name": "Personal Services",
+          "count": 37
+        },
+        {
+          "name": "Professional Services",
+          "count": 16
+        },
+        {
+          "name": "Healthcare",
+          "count": 12
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 135
+        },
+        {
+          "name": "Restaurants",
+          "count": 54
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 32
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 31
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 17
+        }
+      ]
+    },
+    {
+      "territory_id": "92117",
+      "business_count": 572,
+      "franchise_count": 144,
+      "independent_count": 428,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.2517482517482518,
+      "pct_independent": 0.7482517482517482,
+      "has_valid_coordinates_count": 572,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.3662587412587435,
+      "classification_confidence_mean": 0.5692307692307688,
+      "classification_method_counts": {
+        "rule_based": 347,
+        "unclassified": 225
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 231
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 135
+        },
+        {
+          "name": "Personal Services",
+          "count": 60
+        },
+        {
+          "name": "Healthcare",
+          "count": 43
+        },
+        {
+          "name": "Professional Services",
+          "count": 24
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 225
+        },
+        {
+          "name": "Restaurants",
+          "count": 79
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 43
+        },
+        {
+          "name": "Medical Offices",
+          "count": 33
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 17
+        }
+      ]
+    },
+    {
+      "territory_id": "92118",
+      "business_count": 375,
+      "franchise_count": 48,
+      "independent_count": 326,
+      "unknown_franchise_count": 1,
+      "pct_franchise": 0.128,
+      "pct_independent": 0.8693333333333333,
+      "has_valid_coordinates_count": 375,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.3704,
+      "classification_confidence_mean": 0.5610666666666678,
+      "classification_method_counts": {
+        "rule_based": 223,
+        "unclassified": 152
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 158
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 119
+        },
+        {
+          "name": "Personal Services",
+          "count": 25
+        },
+        {
+          "name": "Lodging",
+          "count": 17
+        },
+        {
+          "name": "Entertainment & Recreation",
+          "count": 15
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 152
+        },
+        {
+          "name": "Restaurants",
+          "count": 66
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 18
+        },
+        {
+          "name": "Hotels & Motels",
+          "count": 17
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 16
+        }
+      ]
+    },
+    {
+      "territory_id": "92119",
+      "business_count": 141,
+      "franchise_count": 38,
+      "independent_count": 103,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.2695035460992908,
+      "pct_independent": 0.7304964539007093,
+      "has_valid_coordinates_count": 141,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.290070921985815,
+      "classification_confidence_mean": 0.4936170212765955,
+      "classification_method_counts": {
+        "rule_based": 74,
+        "unclassified": 67
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 67
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 30
+        },
+        {
+          "name": "Personal Services",
+          "count": 17
+        },
+        {
+          "name": "Professional Services",
+          "count": 6
+        },
+        {
+          "name": "Healthcare",
+          "count": 5
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 67
+        },
+        {
+          "name": "Restaurants",
+          "count": 14
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 10
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 5
+        },
+        {
+          "name": "Financial Services",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "territory_id": "92120",
+      "business_count": 461,
+      "franchise_count": 94,
+      "independent_count": 367,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.2039045553145336,
+      "pct_independent": 0.7960954446854663,
+      "has_valid_coordinates_count": 460,
+      "pct_valid_coordinates": 0.9978308026030369,
+      "avg_rating_mean": 4.2995652173913035,
+      "classification_confidence_mean": 0.47592190889371033,
+      "classification_method_counts": {
+        "rule_based": 233,
+        "unclassified": 228
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 232
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 91
+        },
+        {
+          "name": "Personal Services",
+          "count": 35
+        },
+        {
+          "name": "Healthcare",
+          "count": 25
+        },
+        {
+          "name": "Automotive Services",
+          "count": 24
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 228
+        },
+        {
+          "name": "Restaurants",
+          "count": 49
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 25
+        },
+        {
+          "name": "Medical Offices",
+          "count": 20
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 19
+        }
+      ]
+    },
+    {
+      "territory_id": "92121",
+      "business_count": 1101,
+      "franchise_count": 135,
+      "independent_count": 966,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.1226158038147139,
+      "pct_independent": 0.8773841961852861,
+      "has_valid_coordinates_count": 1101,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.336578707916289,
+      "classification_confidence_mean": 0.4594913714804702,
+      "classification_method_counts": {
+        "unclassified": 566,
+        "rule_based": 535
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 580
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 199
+        },
+        {
+          "name": "Healthcare",
+          "count": 57
+        },
+        {
+          "name": "Automotive Services",
+          "count": 55
+        },
+        {
+          "name": "Professional Services",
+          "count": 47
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 566
+        },
+        {
+          "name": "Restaurants",
+          "count": 121
+        },
+        {
+          "name": "Medical Offices",
+          "count": 47
+        },
+        {
+          "name": "Repair & Maintenance",
+          "count": 43
+        },
+        {
+          "name": "IT Services",
+          "count": 28
+        }
+      ]
+    },
+    {
+      "territory_id": "92122",
+      "business_count": 509,
+      "franchise_count": 220,
+      "independent_count": 289,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.43222003929273084,
+      "pct_independent": 0.5677799607072691,
+      "has_valid_coordinates_count": 509,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.203143418467585,
+      "classification_confidence_mean": 0.5603143418467589,
+      "classification_method_counts": {
+        "unclassified": 205,
+        "rule_based": 304
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 210
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 122
+        },
+        {
+          "name": "Retail",
+          "count": 57
+        },
+        {
+          "name": "Personal Services",
+          "count": 40
+        },
+        {
+          "name": "Professional Services",
+          "count": 28
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 205
+        },
+        {
+          "name": "Restaurants",
+          "count": 77
+        },
+        {
+          "name": "Clothing & Apparel",
+          "count": 43
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 30
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 20
+        }
+      ]
+    },
+    {
+      "territory_id": "92123",
+      "business_count": 742,
+      "franchise_count": 130,
+      "independent_count": 612,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.1752021563342318,
+      "pct_independent": 0.8247978436657682,
+      "has_valid_coordinates_count": 742,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.194474393530997,
+      "classification_confidence_mean": 0.4750673854447427,
+      "classification_method_counts": {
+        "rule_based": 378,
+        "unclassified": 364
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 374
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 135
+        },
+        {
+          "name": "Professional Services",
+          "count": 54
+        },
+        {
+          "name": "Healthcare",
+          "count": 47
+        },
+        {
+          "name": "Personal Services",
+          "count": 36
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 364
+        },
+        {
+          "name": "Restaurants",
+          "count": 81
+        },
+        {
+          "name": "Medical Offices",
+          "count": 42
+        },
+        {
+          "name": "Financial Services",
+          "count": 24
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 23
+        }
+      ]
+    },
+    {
+      "territory_id": "92124",
+      "business_count": 150,
+      "franchise_count": 35,
+      "independent_count": 115,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.23333333333333334,
+      "pct_independent": 0.7666666666666667,
+      "has_valid_coordinates_count": 149,
+      "pct_valid_coordinates": 0.9933333333333333,
+      "avg_rating_mean": 4.268666666666668,
+      "classification_confidence_mean": 0.46333333333333315,
+      "classification_method_counts": {
+        "rule_based": 74,
+        "unclassified": 76
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 76
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 43
+        },
+        {
+          "name": "Personal Services",
+          "count": 13
+        },
+        {
+          "name": "Entertainment & Recreation",
+          "count": 5
+        },
+        {
+          "name": "Healthcare",
+          "count": 3
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 76
+        },
+        {
+          "name": "Restaurants",
+          "count": 22
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 10
+        },
+        {
+          "name": "Specialty Food",
+          "count": 6
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "territory_id": "92126",
+      "business_count": 895,
+      "franchise_count": 232,
+      "independent_count": 662,
+      "unknown_franchise_count": 1,
+      "pct_franchise": 0.25921787709497207,
+      "pct_independent": 0.7396648044692737,
+      "has_valid_coordinates_count": 895,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.276733780760629,
+      "classification_confidence_mean": 0.5354189944134053,
+      "classification_method_counts": {
+        "rule_based": 510,
+        "unclassified": 385
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 394
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 232
+        },
+        {
+          "name": "Personal Services",
+          "count": 52
+        },
+        {
+          "name": "Home Services",
+          "count": 51
+        },
+        {
+          "name": "Healthcare",
+          "count": 37
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 385
+        },
+        {
+          "name": "Restaurants",
+          "count": 138
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 34
+        },
+        {
+          "name": "Construction & Contractors",
+          "count": 32
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 30
+        }
+      ]
+    },
+    {
+      "territory_id": "92127",
+      "business_count": 329,
+      "franchise_count": 75,
+      "independent_count": 254,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.22796352583586627,
+      "pct_independent": 0.7720364741641338,
+      "has_valid_coordinates_count": 329,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.358358662613985,
+      "classification_confidence_mean": 0.47841945288753907,
+      "classification_method_counts": {
+        "unclassified": 160,
+        "rule_based": 169
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 161
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 66
+        },
+        {
+          "name": "Personal Services",
+          "count": 31
+        },
+        {
+          "name": "Professional Services",
+          "count": 27
+        },
+        {
+          "name": "Home Services",
+          "count": 10
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 160
+        },
+        {
+          "name": "Restaurants",
+          "count": 37
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 23
+        },
+        {
+          "name": "Financial Services",
+          "count": 13
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "territory_id": "92128",
+      "business_count": 533,
+      "franchise_count": 191,
+      "independent_count": 342,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.35834896810506567,
+      "pct_independent": 0.6416510318949343,
+      "has_valid_coordinates_count": 533,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.29831144465291,
+      "classification_confidence_mean": 0.6245778611632262,
+      "classification_method_counts": {
+        "rule_based": 356,
+        "unclassified": 177
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 180
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 164
+        },
+        {
+          "name": "Personal Services",
+          "count": 65
+        },
+        {
+          "name": "Professional Services",
+          "count": 36
+        },
+        {
+          "name": "Healthcare",
+          "count": 31
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 177
+        },
+        {
+          "name": "Restaurants",
+          "count": 109
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 47
+        },
+        {
+          "name": "Medical Offices",
+          "count": 26
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 20
+        }
+      ]
+    },
+    {
+      "territory_id": "92129",
+      "business_count": 278,
+      "franchise_count": 81,
+      "independent_count": 197,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.29136690647482016,
+      "pct_independent": 0.7086330935251799,
+      "has_valid_coordinates_count": 278,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.2820143884892055,
+      "classification_confidence_mean": 0.518345323741008,
+      "classification_method_counts": {
+        "rule_based": 154,
+        "unclassified": 124
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 126
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 61
+        },
+        {
+          "name": "Personal Services",
+          "count": 33
+        },
+        {
+          "name": "Healthcare",
+          "count": 11
+        },
+        {
+          "name": "Home Services",
+          "count": 10
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 124
+        },
+        {
+          "name": "Restaurants",
+          "count": 30
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 22
+        },
+        {
+          "name": "Medical Offices",
+          "count": 10
+        },
+        {
+          "name": "Fitness & Recreation",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "territory_id": "92130",
+      "business_count": 453,
+      "franchise_count": 119,
+      "independent_count": 334,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.26269315673289184,
+      "pct_independent": 0.7373068432671082,
+      "has_valid_coordinates_count": 453,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.340838852097131,
+      "classification_confidence_mean": 0.5766004415011049,
+      "classification_method_counts": {
+        "unclassified": 175,
+        "rule_based": 278
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 179
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 116
+        },
+        {
+          "name": "Personal Services",
+          "count": 42
+        },
+        {
+          "name": "Professional Services",
+          "count": 39
+        },
+        {
+          "name": "Healthcare",
+          "count": 29
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 175
+        },
+        {
+          "name": "Restaurants",
+          "count": 73
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 28
+        },
+        {
+          "name": "Medical Offices",
+          "count": 23
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 17
+        }
+      ]
+    },
+    {
+      "territory_id": "92131",
+      "business_count": 299,
+      "franchise_count": 74,
+      "independent_count": 225,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.24749163879598662,
+      "pct_independent": 0.7525083612040134,
+      "has_valid_coordinates_count": 299,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.3207357859531745,
+      "classification_confidence_mean": 0.5782608695652186,
+      "classification_method_counts": {
+        "rule_based": 185,
+        "unclassified": 114
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 117
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 80
+        },
+        {
+          "name": "Personal Services",
+          "count": 27
+        },
+        {
+          "name": "Professional Services",
+          "count": 26
+        },
+        {
+          "name": "Healthcare",
+          "count": 14
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 114
+        },
+        {
+          "name": "Restaurants",
+          "count": 45
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 21
+        },
+        {
+          "name": "Financial Services",
+          "count": 14
+        },
+        {
+          "name": "Medical Offices",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "territory_id": "92132",
+      "business_count": 10,
+      "franchise_count": 1,
+      "independent_count": 9,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.1,
+      "pct_independent": 0.9,
+      "has_valid_coordinates_count": 10,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.65,
+      "classification_confidence_mean": 0.27999999999999997,
+      "classification_method_counts": {
+        "unclassified": 7,
+        "rule_based": 3
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 8
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 2
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 7
+        },
+        {
+          "name": "Travel Services",
+          "count": 1
+        },
+        {
+          "name": "Specialty Food",
+          "count": 1
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "territory_id": "92134",
+      "business_count": 12,
+      "franchise_count": 4,
+      "independent_count": 8,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.3333333333333333,
+      "pct_independent": 0.6666666666666666,
+      "has_valid_coordinates_count": 12,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.066666666666666,
+      "classification_confidence_mean": 0.5,
+      "classification_method_counts": {
+        "unclassified": 6,
+        "rule_based": 6
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 6
+        },
+        {
+          "name": "Healthcare",
+          "count": 3
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 3
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 6
+        },
+        {
+          "name": "Medical Offices",
+          "count": 2
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 2
+        },
+        {
+          "name": "Fast Food",
+          "count": 1
+        },
+        {
+          "name": "Pharmacy",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "territory_id": "92135",
+      "business_count": 18,
+      "franchise_count": 8,
+      "independent_count": 10,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.4444444444444444,
+      "pct_independent": 0.5555555555555556,
+      "has_valid_coordinates_count": 18,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 3.711111111111111,
+      "classification_confidence_mean": 0.5777777777777778,
+      "classification_method_counts": {
+        "unclassified": 7,
+        "rule_based": 11
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 7
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 7
+        },
+        {
+          "name": "Lodging",
+          "count": 2
+        },
+        {
+          "name": "Healthcare",
+          "count": 2
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 7
+        },
+        {
+          "name": "Restaurants",
+          "count": 4
+        },
+        {
+          "name": "Hotels & Motels",
+          "count": 2
+        },
+        {
+          "name": "Medical Offices",
+          "count": 2
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "territory_id": "92139",
+      "business_count": 82,
+      "franchise_count": 16,
+      "independent_count": 66,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.1951219512195122,
+      "pct_independent": 0.8048780487804879,
+      "has_valid_coordinates_count": 82,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.185365853658536,
+      "classification_confidence_mean": 0.48658536585365825,
+      "classification_method_counts": {
+        "unclassified": 39,
+        "rule_based": 43
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 41
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 20
+        },
+        {
+          "name": "Personal Services",
+          "count": 5
+        },
+        {
+          "name": "Education & Childcare",
+          "count": 4
+        },
+        {
+          "name": "Home Services",
+          "count": 3
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 39
+        },
+        {
+          "name": "Restaurants",
+          "count": 6
+        },
+        {
+          "name": "Schools",
+          "count": 4
+        },
+        {
+          "name": "Bars & Nightlife",
+          "count": 4
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "territory_id": "92140",
+      "business_count": 24,
+      "franchise_count": 2,
+      "independent_count": 22,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.08333333333333333,
+      "pct_independent": 0.9166666666666666,
+      "has_valid_coordinates_count": 24,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.279166666666666,
+      "classification_confidence_mean": 0.6666666666666666,
+      "classification_method_counts": {
+        "rule_based": 17,
+        "unclassified": 7
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 7
+        },
+        {
+          "name": "Entertainment & Recreation",
+          "count": 5
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 5
+        },
+        {
+          "name": "Lodging",
+          "count": 2
+        },
+        {
+          "name": "Personal Services",
+          "count": 2
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 7
+        },
+        {
+          "name": "Arts & Entertainment",
+          "count": 4
+        },
+        {
+          "name": "Restaurants",
+          "count": 2
+        },
+        {
+          "name": "Hotels & Motels",
+          "count": 2
+        },
+        {
+          "name": "Fitness & Recreation",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "territory_id": "92145",
+      "business_count": 38,
+      "franchise_count": 13,
+      "independent_count": 25,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.34210526315789475,
+      "pct_independent": 0.6578947368421053,
+      "has_valid_coordinates_count": 38,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.252631578947368,
+      "classification_confidence_mean": 0.4973684210526315,
+      "classification_method_counts": {
+        "rule_based": 20,
+        "unclassified": 18
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 18
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 9
+        },
+        {
+          "name": "Personal Services",
+          "count": 4
+        },
+        {
+          "name": "Education & Childcare",
+          "count": 1
+        },
+        {
+          "name": "Automotive Services",
+          "count": 1
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 18
+        },
+        {
+          "name": "Restaurants",
+          "count": 6
+        },
+        {
+          "name": "Pet Services",
+          "count": 2
+        },
+        {
+          "name": "Coffee & Tea",
+          "count": 2
+        },
+        {
+          "name": "Schools",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "territory_id": "92147",
+      "business_count": 6,
+      "franchise_count": 2,
+      "independent_count": 4,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.3333333333333333,
+      "pct_independent": 0.6666666666666666,
+      "has_valid_coordinates_count": 6,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.3,
+      "classification_confidence_mean": 0.5,
+      "classification_method_counts": {
+        "rule_based": 3,
+        "unclassified": 3
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 3
+        },
+        {
+          "name": "Lodging",
+          "count": 1
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 1
+        },
+        {
+          "name": "Personal Services",
+          "count": 1
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 3
+        },
+        {
+          "name": "Hotels & Motels",
+          "count": 1
+        },
+        {
+          "name": "Specialty Food",
+          "count": 1
+        },
+        {
+          "name": "Fitness & Recreation",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "territory_id": "92154",
+      "business_count": 878,
+      "franchise_count": 185,
+      "independent_count": 693,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.21070615034168566,
+      "pct_independent": 0.7892938496583144,
+      "has_valid_coordinates_count": 878,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.181413911060437,
+      "classification_confidence_mean": 0.4197038724373565,
+      "classification_method_counts": {
+        "unclassified": 486,
+        "rule_based": 392
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 496
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 160
+        },
+        {
+          "name": "Retail",
+          "count": 66
+        },
+        {
+          "name": "Automotive Services",
+          "count": 37
+        },
+        {
+          "name": "Personal Services",
+          "count": 34
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 486
+        },
+        {
+          "name": "Restaurants",
+          "count": 102
+        },
+        {
+          "name": "Automotive Retail",
+          "count": 36
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 23
+        },
+        {
+          "name": "Towing & Roadside",
+          "count": 21
+        }
+      ]
+    },
+    {
+      "territory_id": "92173",
+      "business_count": 430,
+      "franchise_count": 199,
+      "independent_count": 231,
+      "unknown_franchise_count": 0,
+      "pct_franchise": 0.4627906976744186,
+      "pct_independent": 0.5372093023255814,
+      "has_valid_coordinates_count": 430,
+      "pct_valid_coordinates": 1.0,
+      "avg_rating_mean": 4.160697674418606,
+      "classification_confidence_mean": 0.5044186046511638,
+      "classification_method_counts": {
+        "unclassified": 200,
+        "rule_based": 230
+      },
+      "top_sectors": [
+        {
+          "name": "Other Services",
+          "count": 208
+        },
+        {
+          "name": "Retail",
+          "count": 82
+        },
+        {
+          "name": "Food & Beverage",
+          "count": 71
+        },
+        {
+          "name": "Professional Services",
+          "count": 20
+        },
+        {
+          "name": "Personal Services",
+          "count": 14
+        }
+      ],
+      "top_subsectors": [
+        {
+          "name": "Miscellaneous",
+          "count": 200
+        },
+        {
+          "name": "Clothing & Apparel",
+          "count": 69
+        },
+        {
+          "name": "Restaurants",
+          "count": 41
+        },
+        {
+          "name": "Financial Services",
+          "count": 16
+        },
+        {
+          "name": "Health & Beauty",
+          "count": 11
+        }
+      ]
+    }
+  ]
+}
