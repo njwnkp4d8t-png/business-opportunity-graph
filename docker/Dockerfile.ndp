@@ -1,0 +1,56 @@
+###############################################################
+# NDP-safe Jupyter Image for Business Opportunity Graph
+# - Compatible with National Data Platform JupyterHub
+# - Uses official Jupyter Docker Stack as base
+# - Installs project Python dependencies
+# - Auto-tunes thread-related env vars based on CPU/RAM
+###############################################################
+
+# 1. MUST use a Jupyter Docker Stack base image
+FROM quay.io/jupyter/datascience-notebook:latest
+
+###############################################################
+# 2. System dependencies (run as root only)
+###############################################################
+USER root
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gdal-bin \
+    libgdal-dev \
+    libspatialindex-dev \
+    libgeos-dev \
+    libproj-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+###############################################################
+# 3. Python dependencies for this project
+###############################################################
+WORKDIR /tmp
+
+COPY requirements.txt /tmp/requirements.txt
+
+RUN pip install --no-cache-dir -r /tmp/requirements.txt \
+    && pip install --no-cache-dir \
+        pydeck \
+        streamlit \
+        psutil
+
+###############################################################
+# 4. Startup hook: detect cores / RAM and set sane defaults
+###############################################################
+RUN mkdir -p /usr/local/bin/start-notebook.d
+COPY ndp-resources.sh /usr/local/bin/start-notebook.d/10-ndp-resources.sh
+RUN chmod +x /usr/local/bin/start-notebook.d/10-ndp-resources.sh
+
+###############################################################
+# 5. Switch back to the notebook user (critical)
+###############################################################
+USER ${NB_UID}
+
+# Expose the standard Jupyter port required by NDP
+EXPOSE 8888
+
+# IMPORTANT:
+# - We DO NOT override CMD or ENTRYPOINT.
+# - Base image already uses `start-notebook.sh`, which NDP expects.
+
