@@ -71,6 +71,9 @@ FROM python-base AS runtime
 # Copy frontend build artifacts
 COPY --from=frontend-build /frontend/dist /usr/share/nginx/html
 
+# Make graph model diagram downloadable from the frontend
+COPY graph_model.drawio /usr/share/nginx/html/graph_model.drawio
+
 # Validate frontend files were copied
 RUN test -f /usr/share/nginx/html/index.html || { echo "ERROR: Frontend files not copied correctly"; exit 1; }
 

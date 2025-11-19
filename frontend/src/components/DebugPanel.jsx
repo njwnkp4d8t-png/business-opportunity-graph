@@ -34,15 +34,15 @@ const DebugPanel = () => {
       <button
         className="debug-toggle"
         onClick={() => setIsOpen(!isOpen)}
-        title="Toggle Debug Panel"
+        title="Toggle debug panel"
       >
-        🐛
+        DBG
       </button>
 
       {isOpen && (
         <div className="debug-panel">
           <div className="debug-header">
-            <h3>🛠️ Debug Panel</h3>
+            <h3>Debug Panel</h3>
             <button onClick={() => setIsOpen(false)} className="debug-close">
               ×
             </button>
@@ -59,7 +59,7 @@ const DebugPanel = () => {
                 <div className="debug-row">
                   <span className="debug-label">Mock Data:</span>
                   <span className="debug-value">
-                    {config.features.enableMockData ? '✅ Enabled' : '❌ Disabled'}
+                    {config.features.enableMockData ? 'Enabled' : 'Disabled'}
                   </span>
                 </div>
                 <div className="debug-row">
@@ -89,9 +89,7 @@ const DebugPanel = () => {
                   </>
                 ) : (
                   <div className="debug-row">
-                    <span className="debug-value">
-                      Memory info not available
-                    </span>
+                    <span className="debug-value">Memory info not available</span>
                   </div>
                 )}
               </div>
@@ -103,13 +101,15 @@ const DebugPanel = () => {
                 <div className="debug-row">
                   <span className="debug-label">Width:</span>
                   <span className="debug-value">
-                    {debugInfo.viewport.width}px
+                    {debugInfo.viewport.width}
+                    px
                   </span>
                 </div>
                 <div className="debug-row">
                   <span className="debug-label">Height:</span>
                   <span className="debug-value">
-                    {debugInfo.viewport.height}px
+                    {debugInfo.viewport.height}
+                    px
                   </span>
                 </div>
               </div>
@@ -119,13 +119,13 @@ const DebugPanel = () => {
               <h4>Actions</h4>
               <div className="debug-actions">
                 <button onClick={handleCopyDebugInfo} className="debug-button">
-                  📋 Copy Debug Info
+                  Copy debug info
                 </button>
                 <button onClick={handleClearConsole} className="debug-button">
-                  🗑️ Clear Console
+                  Clear console
                 </button>
                 <button onClick={handleReloadPage} className="debug-button">
-                  🔄 Reload Page
+                  Reload page
                 </button>
               </div>
             </div>
@@ -137,3 +137,4 @@ const DebugPanel = () => {
 };
 
 export default DebugPanel;
+

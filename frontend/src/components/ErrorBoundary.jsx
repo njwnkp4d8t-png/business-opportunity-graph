@@ -20,7 +20,7 @@ class ErrorBoundary extends Component {
   }
 
   componentDidCatch(error, errorInfo) {
-    console.error('🔴 Error Boundary caught an error:', error, errorInfo);
+    console.error('[Frontend] Error boundary caught an error:', error, errorInfo);
     this.setState({
       error,
       errorInfo,
@@ -40,7 +40,7 @@ class ErrorBoundary extends Component {
       return (
         <div className="error-boundary">
           <div className="error-boundary-content">
-            <div className="error-icon">⚠️</div>
+            <div className="error-icon">!</div>
             <h2>Oops! Something went wrong</h2>
             <p className="error-message">
               {this.state.error?.message || 'An unexpected error occurred'}

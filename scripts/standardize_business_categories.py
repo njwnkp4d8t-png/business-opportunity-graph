@@ -797,10 +797,45 @@ def process_data(input_file: str, output_file: str, openai_api_key: Optional[str
         "category_mappings": category_mappings
     }
 
-    # Save standardized data
+    # Save standardized data (slim planner-friendly view)
     logger.info(f"Saving standardized data to {output_file}")
-    with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(standardized_data, f, indent=2, ensure_ascii=False)
+    slim_fields = [
+        # Identity / location
+        "business_id",
+        "business_name",
+        "address",
+        "city",
+        "zip_code",
+        "blockgroup",
+        "latitude",
+        "longitude",
+        "has_valid_coordinates",
+        # Franchise metadata
+        "franchise",
+        "franchise_type",
+        "is_franchise",
+        "confidence",
+        "reasoning",
+        # Categories
+        "categories_raw",
+        "category_original",
+        "category_sector",
+        "category_subsector",
+        "category_confidence",
+        "category_method",
+        # Quality / scoring
+        "avg_rating",
+        # Optional link for UI
+        "url",
+    ]
+
+    slim_records: List[Dict[str, Any]] = []
+    for rec in standardized_data:
+        slim = {key: rec.get(key) for key in slim_fields if key in rec}
+        slim_records.append(slim)
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(slim_records, f, indent=2, ensure_ascii=False)
 
     # Save reports
     report_file = output_file.replace('.json', '_mapping_report.json')

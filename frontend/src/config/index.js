@@ -25,7 +25,7 @@ const config = {
 
 // Log configuration in development
 if (config.features.enableDebug) {
-  console.log('🔧 Application Configuration:', config);
+  console.log('[Frontend] Application configuration:', config);
 }
 
 export default config;
