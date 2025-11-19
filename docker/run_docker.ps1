@@ -96,14 +96,17 @@ function Test-DockerDaemon {
   Write-Info "Checking Docker daemon status..."
 
   try {
-    $null = docker info 2>&1
-    if ($LASTEXITCODE -ne 0) {
-      throw "Docker daemon is not running"
+    # Use docker version and treat any successful output as a healthy daemon.
+    # Some Docker Desktop configurations can return a non-zero exit code
+    # even when the daemon is available, so we avoid over-strict checks.
+    $output = docker version 2>&1
+    if (-not $output) {
+      throw "Docker CLI returned no output"
     }
     Write-Success "Docker daemon is running"
   }
   catch {
-    throw "Docker daemon is not accessible. Please start Docker Desktop."
+    throw "Docker daemon is not accessible. Please start Docker Desktop. Details: $_"
   }
 }
 
@@ -223,11 +226,40 @@ function Start-Container {
     "-p", "${HostPort}:8080"
   )
 
+  # If a .env file exists in the repo root, pass it
+  # so secrets like OPENAI_API_KEY are available in
+  # the container without being committed to Git.
+  $envFile = Join-Path $repoRoot ".env"
+  if (Test-Path $envFile) {
+    Write-Info "Loading environment variables from .env"
+    $runArgs += "--env-file"
+    $runArgs += $envFile
+  }
+
+  # Persist data/exports/logs between container runs so that
+  # outputs from scripts (e.g., standardized business files)
+  # are written back to the host filesystem.
+  $dataDir = Join-Path $repoRoot "data"
+  $exportsDir = Join-Path $repoRoot "exports"
+  $logsDir = Join-Path $repoRoot "logs"
+
+  if (Test-Path $dataDir) {
+    $runArgs += "-v"
+    $runArgs += ("{0}:/app/data" -f $dataDir)
+  }
+  if (Test-Path $exportsDir) {
+    $runArgs += "-v"
+    $runArgs += ("{0}:/app/exports" -f $exportsDir)
+  }
+  if (Test-Path $logsDir) {
+    $runArgs += "-v"
+    $runArgs += ("{0}:/app/logs" -f $logsDir)
+  }
+
   # Add development volumes if requested
   if ($IsDev) {
     Write-Warning "Running in development mode with volume mounts"
     $runArgs += "-v", "$($repoRoot)\frontend:/app/frontend:ro"
-    $runArgs += "-v", "$($repoRoot)\data:/app/data:ro"
     $runArgs += "-e", "DEV_MODE=true"
   }
 

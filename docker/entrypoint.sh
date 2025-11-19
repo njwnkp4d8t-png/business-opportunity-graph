@@ -145,5 +145,5 @@ main() {
     exec "$@"
 }
 
-# Run main function
-main
+# Run main function, forwarding any arguments (CMD)
+main "$@"

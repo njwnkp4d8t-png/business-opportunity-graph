@@ -4,7 +4,6 @@
 .gitattributes
 
 # Docker
-docker
 Dockerfile
 .dockerignore
 docker-compose*.yml
@@ -55,21 +54,10 @@ yarn-error.log*
 *~
 .DS_Store
 
-# Documentation
-docs/
+# Documentation (leave project docs in image if needed)
 *.md
 README*
 LICENSE
-
-# Data files (keep only what's needed for the app)
-data/
-notebooks/
-scripts/
-*.csv
-*.json
-*.geojson
-!package.json
-!package-lock.json
 
 # Logs
 *.log

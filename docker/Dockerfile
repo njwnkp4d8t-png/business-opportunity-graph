@@ -7,8 +7,10 @@ WORKDIR /frontend
 COPY frontend/package*.json ./
 
 # Install dependencies with error handling
+# Use npm install instead of npm ci because this project
+# does not include a package-lock.json in the repo.
 RUN set -ex && \
-    npm ci --prefer-offline --no-audit && \
+    npm install --no-audit && \
     npm cache clean --force
 
 # Copy frontend source
@@ -79,18 +81,19 @@ RUN test -f /etc/nginx/conf.d/default.conf || { echo "ERROR: nginx.conf not foun
 # Copy supervisor configuration
 COPY docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-# Copy entrypoint script
+# Copy entrypoint script and normalize line endings
 COPY docker/entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+RUN sed -i 's/\r$//' /entrypoint.sh && chmod +x /entrypoint.sh
 
 # Create application user and set permissions
 RUN set -ex && \
     useradd --create-home --shell /bin/bash appuser && \
-    mkdir -p /var/log/nginx /var/lib/nginx /run /var/run/supervisor && \
+    mkdir -p /var/log/nginx /var/log/supervisor /var/lib/nginx /run /var/run/supervisor && \
     chown -R appuser:appuser \
         /app \
         /opt/venv \
         /var/log/nginx \
+        /var/log/supervisor \
         /var/lib/nginx \
         /usr/share/nginx/html \
         /run \
@@ -105,6 +108,7 @@ EXPOSE 8080
 HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
     CMD curl -f http://localhost:8080/ || exit 1
 
-# Use entrypoint script for proper service orchestration
-ENTRYPOINT ["/entrypoint.sh"]
+# Use entrypoint script for proper service orchestration.
+# Invoke via bash to avoid any line-ending/shebang issues.
+ENTRYPOINT ["bash", "/entrypoint.sh"]
 CMD ["supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
